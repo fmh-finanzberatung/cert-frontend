@@ -40,9 +40,10 @@
 </header>
 <span class="hr"></span>-->
 <main class="fmh-main" id="main">
-    <div class="fmh-title-container">
-        <h2 class="fmh-main-title">Gecheckt und geprüft von FMH</h2>
-        <p>Die kundenfreundliche Vermittler-Zertifizierung</p>
+    <div class="toast">
+        <div class="toast-content" id="toast-content">
+
+        </div>
     </div>
     <div class="row section">
         <div class="col">
@@ -70,47 +71,50 @@
         </div>
         <div class="col">
             <div class="form-container">
-                <h2>Zertifizierung anfragen</h2>
-                <form action="#" method="post" name="form" id="form">
-                    <div class="form-group">
-                        <label for="vorname">Vorname *</label>
-                        <input type="text" class="form-control" id="vorname" name="vorname"
-                               placeholder=""
-                        >
-                    </div>
-                    <div class="form-group">
-                        <label for="nachname">Nachname *</label>
-                        <input type="text" class="form-control" id="nachname" name="nachname"
-                               placeholder="">
-                    </div>
+                <div id="form-content">
+                    <h2>Zertifizierung anfragen</h2>
+                    <form onsubmit="sendData()" id="form">
+                        <div class="form-group">
+                            <label for="vorname">Vorname *</label>
+                            <input type="text" class="form-control" id="vorname" name="vorname"
+                                   placeholder=""
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="nachname">Nachname *</label>
+                            <input type="text" class="form-control" id="nachname" name="nachname"
+                                   placeholder="">
+                        </div>
 
-                    <div class="form-group">
-                        <label for="unternehmen">Unternehmen *</label>
-                        <input type="text" class="form-control" id="unternehmen" name="unternehmen"
-                               placeholder="">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">E-Mail Adresse *</label>
-                        <input type="text" class="form-control" id="email" name="email" placeholder="">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Telefonnummer</label>
-                        <input type="number" class="form-control" id="phone" name="phone"
-                               placeholder="">
-                    </div>
-                    <div class="form-check">
-                        <input type="checkbox" class="form-check-input" id="accept" name="accept">
-                        <label for="accept" class="form-check-label">
-                            Bitte bestätigen Sie, dass Sie die <a href="https://www.fmh.de/datenschutz">Datenschutzrichtlinien</a> der
-                            FMH-Finanzberatung gelesen haben und diese akzeptieren.
-                        </label>
-                    </div>
-                    <div class="action-container">
-                        <input type="button" class="send" value="Senden"
-                               onclick="valid(document.getElementById('form'))" >
-                    </div>
-                    <span style="color: #fff; font-weight: 300;"> * Pflichtfelder</span>
-                </form>
+                        <div class="form-group">
+                            <label for="unternehmen">Unternehmen *</label>
+                            <input type="text" class="form-control" id="unternehmen" name="unternehmen"
+                                   placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-Mail Adresse *</label>
+                            <input type="text" class="form-control" id="email" name="email" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefonnummer</label>
+                            <input type="number" class="form-control" id="phone" name="phone"
+                                   placeholder="">
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="accept" name="accept">
+                            <label for="accept" class="form-check-label">
+                                Bitte bestätigen Sie, dass Sie die <a href="https://www.fmh.de/datenschutz">Datenschutzrichtlinien</a> der
+                                FMH-Finanzberatung gelesen haben und diese akzeptieren.
+                            </label>
+                        </div>
+                        <div class="action-container">
+                            <input id="send" type="button" class="send" value="Senden"
+                                   onclick="valid(document.getElementById('form'))" >
+                        </div>
+                        <span style="color: #fff; font-weight: 300;"> * Pflichtfelder</span>
+                    </form>
+                </div>
+                <span class="hide" id="success">Danke für Ihre Anfrage, wir werden uns umgehend bei Ihnen melden.</span>
             </div>
 
         </div>

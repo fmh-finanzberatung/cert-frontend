@@ -108,7 +108,16 @@ body {
 .paragraph {
     margin-bottom: 30px;
 }
-
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 650px;
+}
+.form-container span {
+    color: #fff;
+    text-align: center;
+}
 .card {
     border-radius: 10px;
     display: flex;
@@ -162,12 +171,75 @@ body {
     text-decoration: none;
 }
 
+.toast {
+    z-index: 999;
+    min-width: 200px;
+    position: fixed;
+    left: 50%;
+    top: -120px;
+    border-radius: 6px;
+    background: #fff;
+    padding: 20px 35px 20px 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transform: translate(-50%, 0);
+    transition: all 0.5s cubic-bezier(0.68, -0.55, 0.25, 1.35);
+}
+.toast-border-success {
+    border-left: 8px solid #52c41a;
+}
+.toast-border-error {
+    border-left: 8px solid #ff4d4f;
+}
+.toast.active{
+    transform: translate(-50%, 130px);
+}
+.toast-content{
+    display: flex;
+    align-items: center;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+}
+.message-text {
+    font-size: 20px;
+    font-weight: 600;
+}
+.text-1 {
+    color: #333;
+}
+.text-2 {
+    color: #666;
+    font-weight: 400;
+    font-size: 16px;
+}
+.hide {
+    display: none;
+}
+.show {
+    display: flex;
+}
+*:disabled {
+    background-color: dimgrey;
+    color: linen;
+    opacity: 1;
+}
+.action-container input[type="button"]:disabled {
+    background-color: dimgrey;
+    color: linen;
+    opacity: 1;
+}
+
 @media all and (max-width: 1100px){
     .card {
         flex: 0 0 48%;
         max-width: 48%;
     }
 }
+
 @media all and (max-width: 800px){
     .section {
        flex-direction: column;

@@ -16,6 +16,74 @@ function valid (form) {
     if(fail)
         alert(fail);
     else {
-        form.submit();
+        sendData()
     }
+}
+function sendData() {
+    const data = new FormData(document.getElementById("form"));
+    fetch("/api", { method:"POST", body:data })
+        .then(res => res.text())
+        .then(response => {
+            console.log(response);
+            if (response === "OK") {
+                createMessage('success', 'Alles gut');
+                const form = document.getElementById("form-content");
+                const success = document.getElementById("success");
+                form.className = 'hide';
+                success.className = 'show';
+
+            } else {
+                createMessage('error', 'General server error');
+            }
+        })
+
+        .catch(() => {
+            createMessage('error', 'General server error');
+        });
+    return false;
+}
+
+function createMessage(type, message) {
+    const toast = document.querySelector(".toast");
+    const toastContent = document.getElementById("toast-content");
+    const messageContent = document.createElement("div");
+    const img = document.createElement("img");
+    const span1 = document.createElement("span");
+    const span2 = document.createElement("span");
+    span1.innerHTML = type === 'success' ? 'Success': 'Error';
+    span2.innerHTML = message;
+    img.alt = 'icon';
+    img.src = type === 'success' ? './assets/img/check-circle.svg': './assets/img/error-circle.svg';
+    messageContent.className = 'message';
+    span1.className = 'message-text text-1';
+    span1.className = 'message-text text-2';
+    if(type === 'success') {
+        toast.classList.add('toast-border-success')
+    }
+    if(type === 'error') {
+        toast.classList.add('toast-border-error')
+    }
+
+    messageContent.appendChild(span1);
+    messageContent.appendChild(span2);
+    toastContent.appendChild(img);
+    toastContent.appendChild(messageContent);
+
+    // disabled sending button
+    document.getElementById("send").disabled = true;
+    toast.classList.add("active");
+
+    setTimeout(() =>{
+        toast.classList.remove("active");
+    }, 2000);
+
+    setTimeout(() =>{
+        img.remove();
+        messageContent.remove();
+        if(type === 'success') {
+            toast.classList.remove("toast-border-success");
+        }
+        toast.classList.remove("toast-border-error");
+        document.getElementById("send").disabled = false;
+    }, 3000)
 }

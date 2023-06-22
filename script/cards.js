@@ -25,7 +25,28 @@ function fetchCardsData(){
         "internetUrl": "",
         "gruendungsort": "Mannheim"
     },];
-    /*fetch('https://trata').then((res) => res.json()).then((data) => {}).catch((error) => {
+    const payload =
+    {
+        query: `
+        {
+           fmhBasisAnbieterliste(anbietertyp:[7]){
+            data{
+              anbieterId
+              anbietername
+              anbieterLogoUrl
+              internetUrl
+              gruendungsort
+            }
+          }
+        }
+      `,
+    }
+
+  /*  fetch('/api', {
+        method:"POST",
+        headers: {
+            'Content-Type': 'application/json'
+        }, body: JSON.stringify(payload) }).then((res) => res.json()).then((data) => {}).catch((error) => {
       console.log(`Error Fetching data : ${error}`)
       document.getElementById('cards').innerHTML = 'Error Loading Data'
     });*/
