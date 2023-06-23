@@ -86,3 +86,17 @@ input[type="checkbox"]::before {
 input[type="checkbox"]:checked::before {
     color: #fff;
 }
+#form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#form-content h2 {
+    color: #fff!important;
+}
+.hide {
+    display: none!important;
+}
+.show {
+    display: flex;
+}
