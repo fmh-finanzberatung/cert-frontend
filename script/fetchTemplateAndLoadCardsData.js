@@ -6,7 +6,7 @@ function fetchTemplateAndLoadCardsData() {
     }).then(function(html) {
         document.write(html);
         setTimeout(() => {
-            const content = document.querySelector('.layout');
+            const content = document.querySelector('.layout__1');
             content.innerHTML = '';
             const link1 = document.createElement('link');
             const link2 = document.createElement('link');
@@ -26,7 +26,7 @@ function fetchTemplateAndLoadCardsData() {
             document.head.appendChild(link2);
             document.head.appendChild(script1);
             document.head.appendChild(script2);
-            document.querySelector('.layout').insertAdjacentHTML('beforeend', '<main class="fmh-main" id="main">\n' +
+            document.querySelector('.layout__1').insertAdjacentHTML('beforeend', '<main class="fmh-main" id="main">\n' +
                 '    <div class="toast">\n' +
                 '        <div class="toast-content" id="toast-content">\n' +
                 '\n' +
@@ -84,7 +84,7 @@ function fetchTemplateAndLoadCardsData() {
                 '                        </div>\n' +
                 '                        <div class="form-group">\n' +
                 '                            <label for="phone">Telefonnummer</label>\n' +
-                '                            <input type="number" class="form-control" id="phone" name="phone"\n' +
+                '                            <input type="text" class="form-control" id="phone" name="phone"\n' +
                 '                                   placeholder="">\n' +
                 '                        </div>\n' +
                 '                        <div class="form-check">\n' +
@@ -98,7 +98,7 @@ function fetchTemplateAndLoadCardsData() {
                 '                            <input id="send" type="button" class="send" value="Senden"\n' +
                 '                                   onclick="valid(document.getElementById(\'form\'))" >\n' +
                 '                        </div>\n' +
-                '                        <span style="color: #fff; font-weight: 300;"> * Pflichtfelder</span>\n' +
+                '                        <br><span style="color: #fff; font-weight: 300;"> * Pflichtfelder</span>\n' +
                 '                    </form>\n' +
                 '                </div>\n' +
                 '                <span class="hide" id="success">Danke für Ihre Anfrage, wir werden uns umgehend bei Ihnen melden.</span>\n' +
@@ -113,7 +113,7 @@ function fetchTemplateAndLoadCardsData() {
                 '    </div>\n' +
                 '</main>');
             fetchCardsData()
-        }, 100)
+        }, 500)
 
     }).catch(e => {
         console.log(e)
@@ -202,7 +202,7 @@ function fetchCardsData(){
         cardHeader.appendChild(img);
         h3.innerHTML = item?.anbietername || '';
         p.innerHTML = item?.gruendungsort || '';
-        a.innerHTML = 'Zum anbieter';
+        a.innerHTML = 'Zum Anbieter';
         a.href = item?.internetUrl || '#'
         locationDiv.appendChild(locationImage);
         locationDiv.appendChild(p);
