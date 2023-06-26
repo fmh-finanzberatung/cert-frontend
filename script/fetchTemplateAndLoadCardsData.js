@@ -1,7 +1,7 @@
 window.addEventListener('load', fetchTemplateAndLoadCardsData)
 
 function fetchTemplateAndLoadCardsData() {
-    fetch('https://www.fmh.de/api/templates/certificate/3555', ).then((res) => {
+    fetch('https://api.cert.fmh.de/template', ).then((res) => {
         return res.text()
     }).then(function(html) {
         document.write(html);
