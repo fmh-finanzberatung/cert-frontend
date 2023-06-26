@@ -20,8 +20,18 @@ function valid (form) {
     }
 }
 function sendData() {
-    const data = new FormData(document.getElementById("form"));
-    fetch("/api", { method:"POST", body:data })
+    const formData = new FormData(document.getElementById("form"));
+    const payload = {};
+    for (let pair of formData.entries()) {
+        Object.assign(payload, {[pair[0]]: pair[1]})
+    }
+
+    fetch("https://api.cert.fmh.de/send_email", {
+        method:"POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload) })
         .then(res => res.text())
         .then(response => {
             console.log(response);
