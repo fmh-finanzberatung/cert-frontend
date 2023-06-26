@@ -123,7 +123,7 @@ function fetchTemplateAndLoadCardsData() {
     })
 }
 function fetchCardsData(){
-    const data = [{
+    let data = [{
         "anbieterId": 110,
         "anbietername": "Haus & Wohnen",
         "anbieterLogoUrl": "https://www.fmh.de/resources/assets/1286/wide/b2559417a9eb56cbde01d91f8d543339a18d639b-HausundWohnen_1822x607.jpg",
@@ -149,8 +149,7 @@ function fetchCardsData(){
         "gruendungsort": "Mannheim"
     },];
     const payload =
-         `
-        {
+         `{
            fmhBasisAnbieterliste(anbietertyp:[7]){
             data{
               anbieterId
@@ -163,17 +162,19 @@ function fetchCardsData(){
         }
       `
 
+    const subscribed = [267, 110];
     fetch('https://api.cert.fmh.de/certificates', {
         method:"POST",
         headers: {
             'Content-Type': 'application/json'
-        }, body: JSON.stringify(payload) }).then((res) => res.json()).then((data) => {
-        console.log(data)
+        }, body: payload }).then((res) => res.json()).then((d) => {
+        console.log(d);
+        data = d;
     }).catch((error) => {
       console.log(`Error Fetching data : ${error}`)
       document.getElementById('cards').innerHTML = 'Error Loading Data'
     });
-  /*  const row = document.getElementById('cards');
+    const row = document.getElementById('cards');
     const cols = document.createDocumentFragment();
 
     data.forEach(function (item) {
@@ -218,5 +219,5 @@ function fetchCardsData(){
         cardContainer.appendChild(cardActions);
         cols.appendChild(cardContainer);
     });
-    row.appendChild(cols);*/
+    row.appendChild(cols);
 }

@@ -26,7 +26,7 @@ function sendData() {
         Object.assign(payload, {[pair[0]]: pair[1]})
     }
 
-    fetch("https://api.cert.fmh.de/send_email", {
+    fetch("https://api.cert.fmh.de/send-email", {
         method:"POST",
         headers: {
             "Content-Type": "application/json",
