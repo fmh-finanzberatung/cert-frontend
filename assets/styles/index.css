@@ -53,6 +53,7 @@ body {
     margin-bottom: 30px;
 }
 .badge img {
+    object-fit: contain;
     width: 100%;
 }
 .badge span {
@@ -88,6 +89,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.card-header img {
+    width: 100%;
+    object-fit: contain;
 }
 .card-body {
     padding: 30px;

@@ -32,22 +32,23 @@ function sendData() {
             "Content-Type": "application/json",
         },
         body: JSON.stringify(payload) })
-        .then(res => res.text())
+        .then(res => res.json())
         .then(response => {
-            console.log(response);
-            if (response === "OK") {
-                createMessage('success', 'Alles gut');
+            if (response.message === 'Email sent successfully') {
+                createMessage('success', 'Email sent successfully');
                 const form = document.getElementById("form-content");
                 const success = document.getElementById("success");
                 form.className = 'hide';
                 success.className = 'show';
-
-            } else {
-                createMessage('error', 'General server error');
+            }
+            if(response.error) {
+                const error = response.error || 'General server error'
+                createMessage('error', error);
             }
         })
 
         .catch(() => {
+            console.log('here')
             createMessage('error', 'General server error');
         });
     return false;
