@@ -108,7 +108,7 @@ async function fetchTemplateAndLoadCardsData() {
                     '        </div>\n' +
                     '    </div>\n' +
                     '    <div class="row" style="margin: 50px 0">\n' +
-                    '        <h2>Zertifizierte Vermittler in Deutschland</h2>\n' +
+                    '        <h2>Vermittler mit FMH-Zertifikat</h2>\n' +
                     '    </div>\n' +
                     '    <div class="row" id="cards">\n' +
                     '    </div>\n' +
