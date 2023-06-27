@@ -1,12 +1,12 @@
 window.addEventListener('load', fetchTemplateAndLoadCardsData)
 
-function fetchTemplateAndLoadCardsData() {
+async function fetchTemplateAndLoadCardsData() {
     fetch('https://api.cert.fmh.de/template', ).then((res) => {
         return res.text()
     }).then(function(html) {
         document.write(html);
         setTimeout(() => {
-            const content = document.querySelector('.layout__1');
+            const content = document.getElementById('template-content');
             if(content) {
                 content.innerHTML = '';
                 const link1 = document.createElement('link');
@@ -27,7 +27,7 @@ function fetchTemplateAndLoadCardsData() {
                 document.head.appendChild(link2);
                 document.head.appendChild(script1);
                 document.head.appendChild(script2);
-                document.querySelector('.layout__1').insertAdjacentHTML('beforeend', '<main class="fmh-main" id="main">\n' +
+                content.insertAdjacentHTML('beforeend', '<div id="main">\n' +
                     '    <div class="toast">\n' +
                     '        <div class="toast-content" id="toast-content">\n' +
                     '\n' +
@@ -112,7 +112,7 @@ function fetchTemplateAndLoadCardsData() {
                     '    </div>\n' +
                     '    <div class="row" id="cards">\n' +
                     '    </div>\n' +
-                    '</main>');
+                    '</div>');
                 fetchCardsData()
             }
 
@@ -143,10 +143,11 @@ async function fetchCardsData(){
                     'Content-Type': 'application/json'
                 }, body: payload });
             const { data = {} } = await response.json();
-            if(data.fmhBasisAnbieterliste?.data?.length) {
+            const filtered = (data.fmhBasisAnbieterliste?.data || []).filter(item => [110,267].includes(item?.anbieterId));
+            if(filtered?.length) {
                 const row = document.getElementById('cards');
                 const cols = document.createDocumentFragment();
-                data.fmhBasisAnbieterliste?.data.forEach(function (item) {
+                filtered.forEach(function (item) {
                     const cardContainer = document.createElement("div");
                     const cardHeader =  document.createElement("div");
                     const cardBody =  document.createElement("div");
@@ -163,7 +164,10 @@ async function fetchCardsData(){
                     cardBody.className = 'card-body';
                     cardActions.className = 'card-action';
                     locationDiv.className = 'location';
-
+                    if(filtered.length <=2) {
+                        row.classList.add('row-around');
+                        cardContainer.classList.add('card-40');
+                    }
                     locationImage.alt = 'Location';
                     locationImage.height = 30;
                     locationImage.width = 23;
@@ -171,7 +175,7 @@ async function fetchCardsData(){
 
                     img.src = item?.anbieterLogoUrl || '';
                     img.alt = 'Logo';
-                    img.height = 50;
+                    img.height = 40;
                     cardHeader.appendChild(img);
                     h3.innerHTML = item?.anbietername || '';
                     p.innerHTML = item?.gruendungsort || '';
@@ -189,6 +193,8 @@ async function fetchCardsData(){
                     cols.appendChild(cardContainer);
                 });
                 row.appendChild(cols);
+            } else {
+                document.getElementById('cards').innerHTML = 'No offers'
             }
         } catch (e) {
             console.log(`Error Fetching data : ${e}`)
