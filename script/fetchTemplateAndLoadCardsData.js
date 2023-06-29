@@ -38,24 +38,28 @@ async function fetchTemplateAndLoadCardsData() {
                     '            <div class="badge">\n' +
                     '                <img width="430" height="150" src="https://www.fmh.de/resources/assets/1936/original/0eb4d826ec0bcf0d380a246530bd491ceaee6f78-Vermittler-Zertifikat-Logo.png" alt="Badge"/>\n' +
                     '            </div>\n' +
-                    '            <p class="paragraph">Hervorragende Baufinanzierungsvermittler verdienen Anerkennung.</p>\n' +
-                    '            <p class="paragraph">Qualität ist der Schlüssel, wenn es um die Wahl eines Vermittlers für\n' +
-                    '                Ihre Baufinanzierung geht. Deshalb führen wir umfassende Prüfungen\n' +
-                    '                durch und vergeben unser begehrtes FMH-Zertifikat an Vermittler, die\n' +
-                    '                hohe Qualitätsstandards erfüllen.</p>\n' +
-                    '            <p class="paragraph">Wir haben in Zusammenarbeit mit führenden Anbietern auf dem Markt\n' +
-                    '                insgesamt 000 Kriterien entwickelt, nach denen Vermittler in\n' +
-                    '                Deutschland in allen relevanten Qualitätsaspekten bewertet werden.\n' +
-                    '                Durch unsere gründliche Prüfung können Sie sich darauf verlassen,\n' +
-                    '                dass Sie nicht nur attraktive Zinsen erhalten, sondern auch den besten\n' +
-                    '                Service genießen.</p>\n' +
-                    '            <p class="paragraph">Vermittler, die mindestens 75 % dieser Kriterien erfüllen, haben die\n' +
-                    '                Möglichkeit, unser FMH-Zertifikat zu erhalten. Auf dieser Seite finden\n' +
-                    '                Sie eine Liste der geprüften Vermittler in Deutschland.</p>\n' +
-                    '            <p class="paragraph">Vertrauen Sie auf unser Zertifizierungsverfahren und finden Sie einen\n' +
-                    '                qualifizierten Vermittler für Ihre Baufinanzierung.</p>\n' +
-                    '            <p class="paragraph">Sind Sie selbst Vermittler und möchten das FMH-Zertifikat erhalten?\n' +
-                    '                Dann nehmen Sie gerne Kontakt mit uns auf.</p>\n' +
+                    '            <p class="paragraph">Kundenorientierte Baufinanzierung verdient Anerkennung</p>\n' +
+                    '            <p class="paragraph">Qualität ist der Schlüssel, wenn es um die Wahl eines Vermittlers ' +
+                    '                für Ihre Baufinanzierung geht. Deshalb führen wir umfassende Prüfungen durch und vergeben ein FMH-Zertifikat an ' +
+                    '                Vermittler, die hohe Qualitätsstandards erfüllen.</p>\n' +
+                    '            <p class="paragraph">In Zusammenarbeit mit führenden Anbietern auf dem Markt ' +
+                    '                entwickelten wir insgesamt 88 Kriterien, nach denen Vermittler in Deutschland in allen relevanten' +
+                    '                Qualitätsaspekten bewertet werden. So können Sie sich darauf verlassen, dass Sie neben' +
+                    '                attraktiven Zinsen auch den besten Service erhalten. </p>\n' +
+                    '            <p class="paragraph">Wichtig waren uns dabei vier Bereiche:</p>\n' +
+                    '            <ul class="paragraph">' +
+                    '               <li>Technik und digitale Angebote</li>' +
+                    '               <li>Dienstleistungen rund um die Beratung</li>' +
+                    '               <li>Service ab Unterschrift bis zur Darlehensauszahlung</li>' +
+                    '               <li>Betreuung nach der Darlehensauszahlung</li>' +
+                    '           </ul>\n' +
+                    '            <p class="paragraph">Vermittler, die mindestens 75 Prozent der FMH-Kriterien erfüllen,' +
+                    '               haben die Möglichkeit, unser FMH-Zertifikat zu erlangen. Auf dieser Seite finden Sie die ersten' +
+                    '               Baufinanzierungs-Makler mit FMH-Zertifikat.</p>' +
+                    '           <p class="paragraph">Vertrauen Sie auf unser Zertifizierungsverfahren und finden Sie ' +
+                    '               einen qualifizierten Vermittler für Ihre Baufinanzierung.</p>' +
+                    '           <p class="paragraph">Sie sind selbst Vermittler und möchten das FMH-Zertifikat erhalten?' +
+                    '               Dann nehmen Sie gerne Kontakt mit uns auf.</p>\n' +
                     '        </div>\n' +
                     '        <div class="col">\n' +
                     '            <div class="form-container">\n' +
