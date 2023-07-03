@@ -137,14 +137,18 @@ async function fetchTableData(){
                 const thead = document.createElement("thead");
                 const th1 = document.createElement("th");
                 const th2 = document.createElement("th");
+                const th3 = document.createElement("th");
                 const body = document.createElement("tbody");
                 table.classList.add('table');
                 th1.classList.add('th');
                 th2.classList.add('th');
+                th3.classList.add('th');
                 th1.innerHTML = 'Name';
                 th2.innerHTML = 'Tätigkeitsgebiet';
+                th3.innerHTML = 'Besonderheit';
                 headerRow.appendChild(th1);
                 headerRow.appendChild(th2);
+                headerRow.appendChild(th3);
                 thead.appendChild(headerRow);
                 table.appendChild(thead);
 
@@ -152,9 +156,12 @@ async function fetchTableData(){
                     const trBody = document.createElement("tr");
                     const tdBody1 = document.createElement("td");
                     const tdBody2 = document.createElement("td");
+                    const tdBody3 = document.createElement("td");
                     tdBody1.classList.add('td');
                     tdBody2.classList.add('td');
-                    tdBody2.innerHTML = item.particularity || '';
+                    tdBody3.classList.add('td');
+                    tdBody2.innerHTML = item.fieldOfEngagement || '';
+                    tdBody3.innerHTML = item.particularity || '';
                     if(item.url){
                         const a = document.createElement("a");
                         a.href = item.url;
@@ -167,6 +174,7 @@ async function fetchTableData(){
                     }
                     trBody.appendChild(tdBody1);
                     trBody.appendChild(tdBody2);
+                    trBody.appendChild(tdBody3);
                     body.appendChild(trBody);
                 });
                 table.appendChild(body);
