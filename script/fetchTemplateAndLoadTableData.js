@@ -1,6 +1,6 @@
-window.addEventListener('load', fetchTemplateAndLoadCardsData)
+window.addEventListener('load', fetchTemplateAndLoadTableData)
 
-async function fetchTemplateAndLoadCardsData() {
+async function fetchTemplateAndLoadTableData() {
     fetch('https://api.cert.fmh.de/template', ).then((res) => {
         return res.text()
     }).then(function(html) {
@@ -112,12 +112,12 @@ async function fetchTemplateAndLoadCardsData() {
                     '        </div>\n' +
                     '    </div>\n' +
                     '    <div class="row" style="margin: 50px 0">\n' +
-                    '        <h2>Vermittler mit FMH-Zertifikat</h2>\n' +
+                    '        <h2>Diese Vermittler für Baufinanzierung haben bereits das Zertifikat der FMH-Finanzberatung erhalten</h2>\n' +
                     '    </div>\n' +
-                    '    <div class="row" id="cards">\n' +
+                    '    <div class="row" id="table-container">\n' +
                     '    </div>\n' +
                     '</div>');
-                fetchCardsData()
+                fetchTableData()
             }
 
         }, 500)
@@ -126,84 +126,89 @@ async function fetchTemplateAndLoadCardsData() {
         console.log(e)
     })
 }
-async function fetchCardsData(){
-    const payload =
-         `{
-           fmhBasisAnbieterliste(anbietertyp:[7]){
-            data{
-              anbieterId
-              anbietername
-              anbieterLogoUrl
-              internetUrl
-              gruendungsort
-            }
-          }
-        }
-      `
+async function fetchTableData(){
         try {
-            const response = await fetch('https://api.cert.fmh.de/certificates', {
-                method:"POST",
-                headers: {
-                    'Content-Type': 'application/json'
-                }, body: payload });
-            const { data = {} } = await response.json();
-            const filtered = (data.fmhBasisAnbieterliste?.data || []).filter(item => [110,267].includes(item?.anbieterId));
-            if(filtered?.length) {
-                const row = document.getElementById('cards');
-                const cols = document.createDocumentFragment();
-                filtered.forEach(function (item) {
-                    const cardContainer = document.createElement("div");
-                    const cardHeader =  document.createElement("div");
-                    const cardBody =  document.createElement("div");
-                    const cardActions =  document.createElement("div");
-                    const locationDiv = document.createElement("div");
-                    const h3 =  document.createElement("h3");
-                    const p =  document.createElement("p");
-                    const img = document.createElement("img");
-                    const locationImage = document.createElement("img");
-                    const a = document.createElement("a");
+        const certificates = await fetchDataWithApiToken();
+            if(certificates?.length) {
+                const row = document.getElementById('table-container');
 
-                    cardContainer.className = 'card';
-                    cardHeader.className = 'card-header';
-                    cardBody.className = 'card-body';
-                    cardActions.className = 'card-action';
-                    locationDiv.className = 'location';
-                    if(filtered.length <=2) {
-                        row.classList.add('row-around');
-                        cardContainer.classList.add('card-40');
+                const table = document.createElement("table");
+                const headerRow = document.createElement("tr");
+                const thead = document.createElement("thead");
+                const th1 = document.createElement("th");
+                const th2 = document.createElement("th");
+                const body = document.createElement("tbody");
+                table.classList.add('table');
+                th1.classList.add('th');
+                th2.classList.add('th');
+                th1.innerHTML = 'Name';
+                th2.innerHTML = 'Tätigkeitsgebiet';
+                headerRow.appendChild(th1);
+                headerRow.appendChild(th2);
+                thead.appendChild(headerRow);
+                table.appendChild(thead);
+
+                certificates.forEach(function (item) {
+                    const trBody = document.createElement("tr");
+                    const tdBody1 = document.createElement("td");
+                    const tdBody2 = document.createElement("td");
+                    tdBody1.classList.add('td');
+                    tdBody2.classList.add('td');
+                    tdBody2.innerHTML = item.particularity || '';
+                    if(item.url){
+                        const a = document.createElement("a");
+                        a.href = item.url;
+                        a.target= '_blank';
+                        a.innerHTML = item.name;
+                        tdBody1.appendChild(a)
                     }
-                    locationImage.alt = 'Location';
-                    locationImage.height = 30;
-                    locationImage.width = 23;
-                    locationImage.src = './assets/img/location.png';
-
-                    img.src = item?.anbieterLogoUrl || '';
-                    img.alt = 'Logo';
-                    img.height = 40;
-                    cardHeader.appendChild(img);
-                    h3.innerHTML = item?.anbietername || '';
-                    p.innerHTML = item?.gruendungsort || '';
-                    a.innerHTML = 'Zum Anbieter';
-                    a.href = item?.internetUrl || '#'
-                    locationDiv.appendChild(locationImage);
-                    locationDiv.appendChild(p);
-                    cardBody.appendChild(h3);
-                    cardBody.appendChild(locationDiv);
-                    cardActions.appendChild(a);
-
-                    cardContainer.appendChild(cardHeader);
-                    cardContainer.appendChild(cardBody);
-                    cardContainer.appendChild(cardActions);
-                    cols.appendChild(cardContainer);
+                    if(!item.url) {
+                        tdBody1.innerHTML = item.name || '';
+                    }
+                    trBody.appendChild(tdBody1);
+                    trBody.appendChild(tdBody2);
+                    body.appendChild(trBody);
                 });
-                row.appendChild(cols);
+                table.appendChild(body);
+                row.appendChild(table);
             } else {
-                document.getElementById('cards').innerHTML = 'No offers'
+                document.getElementById('table-container').innerHTML = 'No offers'
             }
         } catch (e) {
             console.log(`Error Fetching data : ${e}`)
-            document.getElementById('cards').innerHTML = 'Error Loading Data'
+            document.getElementById('table-container').innerHTML = 'Error Loading Data'
         }
+}
 
-
+async function fetchDataWithApiToken() {
+    const token = await fetch('https://api.cert.fmh.de/token')
+        .then(res => res.json())
+        .then(res => res.data?.authenticateUserWithPassword?.sessionToken || '')
+    return fetch('https://cms.fmh.de/api/graphql', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${token}`,
+        },
+        body: JSON.stringify({
+            query: `query ($active: Boolean) {
+        brokerCertificates(
+          where: {
+            active: {
+              # nur freigegebene Zertifikate
+              equals: $active
+            }
+          }
+        ) {
+          name
+          fieldOfEngagement
+          url
+          particularity
+        }
+      }
+      `
+        })
+    })
+        .then(res => res.json())
+        .then(result => result.data?.brokerCertificates || [])
 }
