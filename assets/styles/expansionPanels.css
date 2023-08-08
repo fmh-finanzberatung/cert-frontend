@@ -24,7 +24,6 @@
   text-align: start;
   border-radius: inherit;
   display: flex;
-  font-size: .9375rem;
   line-height: 1;
   min-height: 48px;
   outline: none;
@@ -44,6 +43,7 @@
 }
 .v-expansion-panel-title__overlay {
   color: var(--primary);
+  font-size: var(--font-size-medium);
 }
 .v-expansion-panel-title__icon {
   display: inline-flex;

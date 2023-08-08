@@ -45,20 +45,20 @@ async function createPage() {
                 '           alt="Max Herbst" ' +
                 '           class="circle"/>\n' +
                 '        <div class="author-box">\n' +
-                '            <p class="italic">„Unser Zertifikat trennt die Spreu vom Weizen”</p>\n' +
-                '            <p class="text-secondary bolder">Max Herbst, Inhaber der FMH-Finanzberatung</p>\n' +
+                '            <p class="italic font-size-medium">„Unser Zertifikat trennt die Spreu vom Weizen.”</p>\n' +
+                '            <p class="text-secondary bolder text-align-right">Max Herbst, Inhaber der FMH-Finanzberatung</p>\n' +
                 '        </div>\n' +
                 '\n' +
                 '    </div>\n' +
-                '      <p class="font-size-small mb-5">In Deutschland stehen rund 1.000 Banken etwa 50.000 Vermittlern' +
+                '      <p class="mb-5">In Deutschland stehen rund 1.000 Banken etwa 50.000 Vermittlern' +
                 '         für Baufinanzierung gegenüber. Angesichts dieser Auswahl ist es als Kunde kompliziert, den passenden' +
                 '         Kandidaten zu finden. Zwar müssen alle Vermittler einen Sachkunde-Nachweis erbringen, um ihr Business' +
                 '         ausüben zu dürfen, aber wer eine Finanzierung sucht, benötigt mehr als das. Gerade in einem schwierigen ' +
                 '         Umfeld sind eine langfristige, solide Betreuung und kundenbezogene Beratung essenziell. Hier setzt das FMH-Zertifikat an. \n' +
                 '      </p>\n' +
-                '        <p class="text-align-right mb-1">“Wir schätzen die FMH-Finanzberatung für ihre Seriosität</p>\n' +
-                '        <p class="text-align-right mb-1">in Bezug auf Zinsen und Bedingungen und ihre</p>\n' +
-                '        <p class="text-align-right mb-1">Unabhängigkeit von Anbietern”</p>\n' +
+                '        <p class="text-align-right italic font-size-medium">“Wir schätzen die FMH-Finanzberatung für ihre Seriosität</p>\n' +
+                '        <p class="text-align-right italic font-size-medium">in Bezug auf Zinsen und Bedingungen und ihre</p>\n' +
+                '        <p class="text-align-right italic mb-1 font-size-medium">Unabhängigkeit von Anbietern”</p>\n' +
                 '        <p class="text-secondary bolder text-align-right">Baufi Veteran, Interhyp</p>\n' +
                 '</div>')
 
@@ -98,7 +98,7 @@ async function createPage() {
                 '    <div class="box4">\n' +
                 '        <h2>Warum ein Zertifikat?</h2>\n' +
                 '        <div>\n' +
-                '           <p class="font-size-small mb-5">Bei eigener exzellenter Beratungsleistung und Servicestandards fragen Sie sich sicher immer wieder, wie Sie sich von Ihren Mitbewerbern abheben können.\n' +
+                '           <p class="mb-5">Bei eigener exzellenter Beratungsleistung und Servicestandards fragen Sie sich sicher immer wieder, wie Sie sich von Ihren Mitbewerbern abheben können.\n' +
                 '                Die Lösung ist das FMH-Zertifikat &#8222;geprüft & gecheckt &#8221;. Es bewertet vorrangig den technischen Standard, die Beratungsintensität, die Betreuung zwischen\n' +
                 '                Unterschrift und Darlehensauszahlung sowie den Service nach erfolgter Auszahlung. Ob das Zinsangebot gut oder weniger gut ist, können Kunden sehr\n' +
                 '                schnell feststellen, nicht aber, was sie an Consulting erhalten. Durch das FMH-Zertifikat lässt sich die Qualität der Beratung auf einen Blick erkennen und\n' +
@@ -120,34 +120,34 @@ async function createPage() {
                 '               />\n' +
                 '         </div>\n'+
                 '         <div class="col align-center">\n' +
-                '          <span class="font-size-small">Die zu prüfenden Baufinanzierungsvermittler müssen IHK-geprüft und eine\n' +
+                '          <span>Die zu prüfenden Baufinanzierungsvermittler müssen IHK-geprüft und eine\n' +
                 '           behördliche Erlaubnis im Sinne des Paragrafen 34i der Gewerbeordnung\n' +
                 '           vorweisen.</span>\n'+
                 '         </div>\n'+
                 '        </div>\n' +
                 '        <h2  style="margin-top: 50px">Ablauf der Prüfung & Auswertung</h2>\n' +
-                '        <div class="wrapper column">\n' +
+                '        <div class="wrapper column pl-0">\n' +
                 '            <div>\n' +
                 '                <span class="number">1</span>\n' +
-                '                <span class="font-size-small max-w-80">Nachdem Sie unser <a href="#form-content" class="text-secondary">Kontaktformular</a> ausgefüllt und abgeschickt haben, lassen wir Ihnen unseren Preisvorschlag und ein\n'+
+                '                <span class="max-w-80">Nachdem Sie unser <a href="#form-content" class="text-secondary">Kontaktformular</a> ausgefüllt und abgeschickt haben, lassen wir Ihnen unseren Preisvorschlag und ein\n'+
                 '                     Auftragsformular zukommen.' +
                 '                </span>\n' +
                 '            </div>\n' +
                 '            <div>\n' +
                 '                <span class="number">2</span>\n' +
-                '                <span class="font-size-small max-w-80">Sie schicken uns den vollständig ausgefüllten Antrag ganz bequem per E-Mail zurück.\n'+
+                '                <span class="max-w-80">Sie schicken uns den vollständig ausgefüllten Antrag ganz bequem per E-Mail zurück.\n'+
                 '                     Sollten Sie Hilfe beim Ausfüllen benötigen, steht Ihnen ein persönlicher Ansprechpartner gerne zur Seite.' +
                 '               </span>\n' +
                 '            </div>\n' +
                 '            <div>\n' +
                 '                <span class="number">3</span>\n' +
-                '                <p class="font-size-small max-w-80">Wir prüfen Ihre Unterlagen und unterbreiten Ihnen innerhalb von [Zeitangabe] einige Terminvorschläge. </br>\n' +
+                '                <p class="max-w-80">Wir prüfen Ihre Unterlagen und unterbreiten Ihnen innerhalb von [Zeitangabe] einige Terminvorschläge. </br>\n' +
                 '                   <strong>Unser Tipp:</strong> Legen Sie am besten bereits vorab einen internen Ansprechpartner für die Zertifizierung fest.\n'+
                 '                </p>\n' +
                 '            </div>\n' +
                 '            <div class="info-container align-center">\n' +
                 '               <img src="./assets/img/information.svg" alt="info" width="30" height="30">\n' +
-                '              <span class="font-size-small">\n' +
+                '              <span>\n' +
                 '                     Der Ansprechpartner sollte kompetent sein und Statements für das Unternehmen' +
                 '                     treffen dürfen. Die Bewertung kann sich nicht ausschließlich auf mündliche ' +
                 '                     Aussagen des Vermittlers stützen, sondern müssen entsprechend belegbar sein.\n'+
@@ -155,7 +155,7 @@ async function createPage() {
                 '           </div>\n'+
                 '         <div>\n' +
                 '            <span class="number">4</span>\n' +
-                '            <span class="font-size-small max-w-80">Wenn der Termin feststeht, besucht Sie eine FMH-Mitarbeiterin/Mitarbeiter in Ihren Räumlichkeiten,\n' +
+                '            <span class="max-w-80">Wenn der Termin feststeht, besucht Sie eine FMH-Mitarbeiterin/Mitarbeiter in Ihren Räumlichkeiten,\n' +
                 '                 um die Zertifizierung durchzuführen.<br/>\n' +
                 '                 <strong>Wichtig:</strong> Um einem reibungslosen Ablauf zu ermöglichen, sollte der von Ihnen ernannte Ansprechpartner<br/>\n'+
                 '                 am Tag der Prüfung ca. 3 Stunden von allen anderen Verpflichtungen befreit sein.' +
@@ -163,7 +163,7 @@ async function createPage() {
                 '        </div>\n' +
                 '        <div>\n' +
                 '           <span class="number">5</span>\n' +
-                '           <span class="font-size-small max-w-80">\n' +
+                '           <span class="max-w-80">\n' +
                 '                  Die FMH-Mitarbeiterin/Mitarbeiter fasst die notierten Antworten Ihres internen Ansprechpartners direkt im Anschluss<br/>\n' +
                 '                  zusammen und lässt Sie gegenzeichnen.<br/>\n' +
                 '                  Beide Parteien verpflichten sich zur Verschwiegenheit über die erhaltenen Interna und Abläufe.\n' +
@@ -171,16 +171,16 @@ async function createPage() {
                 '        </div>\n' +
                 '        <div>\n' +
                 '            <span class="number">6</span>\n' +
-                '              <span class="font-size-small max-w-80">\n' +
+                '              <span class="max-w-80">\n' +
                 '                 Im letzten Schritt werten wir die Ergebnisse in unserer Zentrale aus. Die Bewertung und Gewichtung erfolgen unabhängig und<br/>\n' +
                 '                 diskret. Das Ergebnis teilen wir Ihnen innerhalb von fünf Arbeitstagen mit.\n' +
                 '            </span>\n' +
                 '        </div>\n'+
                 '        </div>\n' +
                 '        <h2  style="margin-top: 50px">Kriterien, die Vermittler erfüllen müssen</h2>\n' +
-                '        <p class="font-size-small mb-5">Die FMH-Finanzberatung hat bei ihrer Prüfung für das FMH-Zertifikat 88 Fragen definiert. Damit Sie sich eine Vorstellung machen können, hier ein Auszug:</p>\n' +
+                '        <p class="mb-5">Die FMH-Finanzberatung hat bei ihrer Prüfung für das FMH-Zertifikat 88 Fragen definiert. Damit Sie sich eine Vorstellung machen können, hier ein Auszug:</p>\n' +
                 '        <div class="layout">\n' +
-                '        <div>\n'+
+                '        <div class="panels-container">\n'+
                 '    <div class="container">\n' +
                 '        <div class="v-expansion-panel">\n' +
                 '            <div class="v-expansion-panel__shadow"></div>\n' +
@@ -191,20 +191,20 @@ async function createPage() {
                 '            <div class="content">\n' +
                 '                <div class="v-expansion-panel-text">\n' +
                 '                    <div class="v-expansion-panel-text__wrapper">\n' +
-                '                        <p class="font-size-small mb-1"><strong>Transparente Zinsaussagen und Berechnungstool:</strong> Sie ermöglichen echte Zinsaussagen auf Ihrer Website und bieten ein\n' +
+                '                        <p class="mb-1"><strong>Transparente Zinsaussagen und Berechnungstool:</strong> Sie ermöglichen echte Zinsaussagen auf Ihrer Website und bieten ein\n' +
                 '                            praktisches Berechnungstool ohne vorherige Dateneingabe.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Vorab-Zinsinformationen ohne Dateneingabe:</strong> Sie bieten Zinsinformationen vor der Eingabe persönlicher Daten, um\n' +
+                '                        <p class="mb-1"><strong>Vorab-Zinsinformationen ohne Dateneingabe:</strong> Sie bieten Zinsinformationen vor der Eingabe persönlicher Daten, um\n' +
                 '                            Transparenz und Vertrauen zu schaffen.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Direkte schriftliche Anfragemöglichkeit:</strong> Sie ermöglichen eine unkomplizierte schriftliche Anfrage über Ihre Website für schnelle\n' +
+                '                        <p class="mb-1"><strong>Direkte schriftliche Anfragemöglichkeit:</strong> Sie ermöglichen eine unkomplizierte schriftliche Anfrage über Ihre Website für schnelle\n' +
                 '                            und effiziente Kommunikation.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Vielseitiger Kreditvergleich:</strong> Sie ermöglichen den Kunden, verschiedene Kreditinstitute gleichzeitig zu vergleichen, um die beste\n' +
+                '                        <p class="mb-1"><strong>Vielseitiger Kreditvergleich:</strong> Sie ermöglichen den Kunden, verschiedene Kreditinstitute gleichzeitig zu vergleichen, um die beste\n' +
                 '                            Finanzierungslösung zu finden.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Professionelle Kundenbetreuung durch CRM-System:</strong> Sie setzen ein leistungsstarkes CRM-System ein, um eine professionelle\n' +
+                '                        <p class="mb-1"><strong>Professionelle Kundenbetreuung durch CRM-System:</strong> Sie setzen ein leistungsstarkes CRM-System ein, um eine professionelle\n' +
                 '                            Kundenbetreuung und herausragenden Service zu gewährleisten.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Digitale Beratungsoptionen:</strong> Sie bieten flexible digitale Beratungsmöglichkeiten wie Video-Calls, um eine individuelle und\n' +
+                '                        <p class="mb-1"><strong>Digitale Beratungsoptionen:</strong> Sie bieten flexible digitale Beratungsmöglichkeiten wie Video-Calls, um eine individuelle und\n' +
                 '                            kundenorientierte Beratung anzubieten.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Eigene digitale Services:</strong> Sie bieten maßgeschneiderte digitale Services wie Rechner und Antragsstrecken an, um den Finanzierungsprozess zu erleichtern.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Erreichbarkeit in Ausnahmesituationen:</strong> Sie garantieren eine stets erreichbare Ansprechperson, selbst während Urlaubs- oder Krankheitsphasen.</p>\n' +
+                '                        <p class="mb-1"><strong>Eigene digitale Services:</strong> Sie bieten maßgeschneiderte digitale Services wie Rechner und Antragsstrecken an, um den Finanzierungsprozess zu erleichtern.</p>\n' +
+                '                        <p class="mb-1"><strong>Erreichbarkeit in Ausnahmesituationen:</strong> Sie garantieren eine stets erreichbare Ansprechperson, selbst während Urlaubs- oder Krankheitsphasen.</p>\n' +
                 '                    </div>\n' +
                 '                </div>\n' +
                 '            </div>\n' +
@@ -221,18 +221,18 @@ async function createPage() {
                 '            <div class="content">\n' +
                 '                <div class="v-expansion-panel-text">\n' +
                 '                    <div class="v-expansion-panel-text__wrapper">\n' +
-                '                        <p class="font-size-small mb-1"><strong>Servicelevel:</strong> Sie reagieren innerhalb eines definierten Zeitraums auf Kundenanfragen.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Beratungssprachen:</strong> Sie beraten Ihre Kunden auch auf Englisch oder anderen Fremdsprachen an.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Erste Gesprächsinformationen:</strong> Kunden erhalten umfassende Informationen beim ersten Gespräch.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Service-Kontrolle und Dokumentation:</strong> Sie verfügen über eine Service-Kontrolle oder Dokumentation für den Beratungsprozess.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Kundenzentrierte Beratungsarten:</strong> Sie bieten verschiedene kundenzentrierte Beratungsarten an.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Gesprächsvorbereitung:</strong> Sie bereiten sich sorgfältig auf das Gespräch vor.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Machbarkeitsaussagen ohne Einkommensfragen:</strong> Sie machen auch ohne Einkommensfragen Machbarkeitsaussagen.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Berücksichtigung weiterer Kosten:</strong> Sie berücksichtigen auch Kosten für Umzug, Renovierung der Altwohnung, etc.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Unterstützung bei Unterlagenbeschaffung:</strong> Sie helfen dabei, wichtige Unterlagen und Informationen zu besorgen.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Berücksichtigung von Fördermitteln:</strong> Sie berücksichtigen öffentliche Fördermittel (KfW, Landesfördermittel).</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Informationen über Absicherung:</strong> Sie informieren Ihre Kunden über Immobilien-/Finanzierungsabsicherung.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Aufklärung über Vertragsrisiken und Instandhaltungskosten:</strong> Sie klären über die Risiken im Darlehensvertrag und zukünftige Instandhaltungskosten auf.</p>\n' +
+                '                        <p class="mb-1"><strong>Servicelevel:</strong> Sie reagieren innerhalb eines definierten Zeitraums auf Kundenanfragen.</p>\n' +
+                '                        <p class="mb-1"><strong>Beratungssprachen:</strong> Sie beraten Ihre Kunden auch auf Englisch oder anderen Fremdsprachen an.</p>\n' +
+                '                        <p class="mb-1"><strong>Erste Gesprächsinformationen:</strong> Kunden erhalten umfassende Informationen beim ersten Gespräch.</p>\n' +
+                '                        <p class="mb-1"><strong>Service-Kontrolle und Dokumentation:</strong> Sie verfügen über eine Service-Kontrolle oder Dokumentation für den Beratungsprozess.</p>\n' +
+                '                        <p class="mb-1"><strong>Kundenzentrierte Beratungsarten:</strong> Sie bieten verschiedene kundenzentrierte Beratungsarten an.</p>\n' +
+                '                        <p class="mb-1"><strong>Gesprächsvorbereitung:</strong> Sie bereiten sich sorgfältig auf das Gespräch vor.</p>\n' +
+                '                        <p class="mb-1"><strong>Machbarkeitsaussagen ohne Einkommensfragen:</strong> Sie machen auch ohne Einkommensfragen Machbarkeitsaussagen.</p>\n' +
+                '                        <p class="mb-1"><strong>Berücksichtigung weiterer Kosten:</strong> Sie berücksichtigen auch Kosten für Umzug, Renovierung der Altwohnung, etc.</p>\n' +
+                '                        <p class="mb-1"><strong>Unterstützung bei Unterlagenbeschaffung:</strong> Sie helfen dabei, wichtige Unterlagen und Informationen zu besorgen.</p>\n' +
+                '                        <p class="mb-1"><strong>Berücksichtigung von Fördermitteln:</strong> Sie berücksichtigen öffentliche Fördermittel (KfW, Landesfördermittel).</p>\n' +
+                '                        <p class="mb-1"><strong>Informationen über Absicherung:</strong> Sie informieren Ihre Kunden über Immobilien-/Finanzierungsabsicherung.</p>\n' +
+                '                        <p class="mb-1"><strong>Aufklärung über Vertragsrisiken und Instandhaltungskosten:</strong> Sie klären über die Risiken im Darlehensvertrag und zukünftige Instandhaltungskosten auf.</p>\n' +
                 '                    </div>\n' +
                 '                </div>\n' +
                 '            </div>\n' +
@@ -248,12 +248,12 @@ async function createPage() {
                 '            <div class="content">\n' +
                 '                <div class="v-expansion-panel-text">\n' +
                 '                    <div class="v-expansion-panel-text__wrapper">\n' +
-                '                        <p class="font-size-small mb-1"><strong>Kontinuierliche Betreuung nach Vertragsabschluss:</strong> Sie gewährleisten eine engagierte Betreuung und Unterstützung Ihrer Kunden zwischen dem Abschluss des Darlehensvertrags und der Auszahlung des Kredits.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Effizientes Auszahlungsmanagement:</strong> Sie verfügen über ein professionelles Auszahlungsmanagement, das eine reibungslose Abwicklung der Kreditauszahlung sicherstellt.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Langfristiger Kundenservice:</strong> Ihr Service endet nicht mit der Darlehensauszahlung; Sie bleiben auch danach weiterhin der Ansprechpartner für Ihre Kunden.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Aufmerksamkeit durch Give-aways:</strong> Sie zeigen besondere Aufmerksamkeit gegenüber Ihren Kunden, zum Beispiel durch das Versenden von Give-aways wie Blumen zum Einzug in die Immobilie.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Professionelles Beschwerdemanagement:</strong> Sie verfügen über ein effektives Beschwerdemanagement, um Kundenanliegen zeitnah und professionell zu bearbeiten.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Fortbildungsangebot für Mitarbeiter:</strong> Sie bieten ein strukturiertes Fortbildungsangebot, um sicherzustellen, dass Ihre Mitarbeiter stets auf dem neuesten Stand sind und ihre Beratungskompetenz kontinuierlich verbessert wird.</p>\n' +
+                '                        <p class="mb-1"><strong>Kontinuierliche Betreuung nach Vertragsabschluss:</strong> Sie gewährleisten eine engagierte Betreuung und Unterstützung Ihrer Kunden zwischen dem Abschluss des Darlehensvertrags und der Auszahlung des Kredits.</p>\n' +
+                '                        <p class="mb-1"><strong>Effizientes Auszahlungsmanagement:</strong> Sie verfügen über ein professionelles Auszahlungsmanagement, das eine reibungslose Abwicklung der Kreditauszahlung sicherstellt.</p>\n' +
+                '                        <p class="mb-1"><strong>Langfristiger Kundenservice:</strong> Ihr Service endet nicht mit der Darlehensauszahlung; Sie bleiben auch danach weiterhin der Ansprechpartner für Ihre Kunden.</p>\n' +
+                '                        <p class="mb-1"><strong>Aufmerksamkeit durch Give-aways:</strong> Sie zeigen besondere Aufmerksamkeit gegenüber Ihren Kunden, zum Beispiel durch das Versenden von Give-aways wie Blumen zum Einzug in die Immobilie.</p>\n' +
+                '                        <p class="mb-1"><strong>Professionelles Beschwerdemanagement:</strong> Sie verfügen über ein effektives Beschwerdemanagement, um Kundenanliegen zeitnah und professionell zu bearbeiten.</p>\n' +
+                '                        <p class="mb-1"><strong>Fortbildungsangebot für Mitarbeiter:</strong> Sie bieten ein strukturiertes Fortbildungsangebot, um sicherzustellen, dass Ihre Mitarbeiter stets auf dem neuesten Stand sind und ihre Beratungskompetenz kontinuierlich verbessert wird.</p>\n' +
                 '                    </div>\n' +
                 '                </div>\n' +
                 '            </div>\n' +
@@ -269,11 +269,11 @@ async function createPage() {
                 '            <div class="content">\n' +
                 '                <div class="v-expansion-panel-text">\n' +
                 '                    <div class="v-expansion-panel-text__wrapper">\n' +
-                '                        <p class="font-size-small mb-1"><strong>Weiterempfehlungs-Marketing praktizieren:</strong> Sie fördern aktiv und gezielt die Empfehlungsbereitschaft Ihrer Kunden.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Pflege der Kundenbeziehung:</strong> Sie pflegen regelmäßigen Kontakt zu Ihren Kunden zu besonderen Anlässen wie Weihnachten, Geburtstagen, etc., um eine langfristige Kundenbindung zu gewährleisten.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Unterstützung bei Immobilienpreisfindung:</strong> Sie unterstützen Ihre Kunden bei möglichen Verkaufsplänen und bieten Hilfe bei der Immobilienpreisfindung.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Informationen zu seriösen Maklern:</strong> Sie informieren Ihre Kunden darüber, dass Sie Kontakte zu seriösen Maklern haben, um ihnen bei Bedarf eine umfassende Unterstützung beim Immobilienverkauf zu bieten.</p>\n' +
-                '                        <p class="font-size-small mb-1"><strong>Informieren über steuerliche oder gesetzliche Änderungen:</strong> Sie halten Ihre Investor-Kunden stets auf dem Laufenden über relevante steuerliche oder gesetzliche Änderungen, die ihre Finanzierung und Investitionen betreffen könnten.</p>\n' +
+                '                        <p class="mb-1"><strong>Weiterempfehlungs-Marketing praktizieren:</strong> Sie fördern aktiv und gezielt die Empfehlungsbereitschaft Ihrer Kunden.</p>\n' +
+                '                        <p class="mb-1"><strong>Pflege der Kundenbeziehung:</strong> Sie pflegen regelmäßigen Kontakt zu Ihren Kunden zu besonderen Anlässen wie Weihnachten, Geburtstagen, etc., um eine langfristige Kundenbindung zu gewährleisten.</p>\n' +
+                '                        <p class="mb-1"><strong>Unterstützung bei Immobilienpreisfindung:</strong> Sie unterstützen Ihre Kunden bei möglichen Verkaufsplänen und bieten Hilfe bei der Immobilienpreisfindung.</p>\n' +
+                '                        <p class="mb-1"><strong>Informationen zu seriösen Maklern:</strong> Sie informieren Ihre Kunden darüber, dass Sie Kontakte zu seriösen Maklern haben, um ihnen bei Bedarf eine umfassende Unterstützung beim Immobilienverkauf zu bieten.</p>\n' +
+                '                        <p class="mb-1"><strong>Informieren über steuerliche oder gesetzliche Änderungen:</strong> Sie halten Ihre Investor-Kunden stets auf dem Laufenden über relevante steuerliche oder gesetzliche Änderungen, die ihre Finanzierung und Investitionen betreffen könnten.</p>\n' +
                 '                    </div>\n' +
                 '                </div>\n' +
                 '            </div>\n' +
@@ -287,17 +287,17 @@ async function createPage() {
                 '                <img class="certificate" src="./assets/img/FMH-Zertifikat-medium.webp" height="240" width="320" alt="FMH-Zertifikat">\n' +
                 '            </div>\n' +
                 '            <div class="col">\n' +
-                '                <div class="mb-2 font-size-small">\n' +
+                '                <div class="mb-2">\n' +
                 '                    <p><strong>Auflistung der Zertifikatsinhaber auf der Internetseite www.FMH.de</strong></p>\n' +
                 '                    <p>Nur wer auf der FMH-Seite gelistet ist, darf das Zertifikat werblich einsetzen.</p>\n' +
                 '                    <p>Gleichzeitig erfolgt ein Direktlink zu Ihrer Internetseite.</p>\n' +
                 '                </div>\n' +
-                '                <div class="mb-2 font-size-small">\n' +
+                '                <div class="mb-2">\n' +
                 '                    <p><strong>Garantierte Aktualität für langfristige Transparenz</strong></p>\n' +
                 '                    <p>Jährliche Neuprüfung des Zertifikats, um Veränderungen der</p>\n' +
                 '                    <p>Dienstleistungen neu zu bewerten.</p>\n' +
                 '                </div>\n' +
-                '                <div class="mb-2 font-size-small">\n' +
+                '                <div class="mb-2">\n' +
                 '                    <p><strong>Zwölfmonatige Nutzung des Logos und Zertifikats</strong></p>\n' +
                 '                    <p>Eigennutzung für Werbemedien wie Website, Broschüren, Aufsteller,</p>\n' +
                 '                    <p>Visitenkarte, E-Mail-Signatur etc. Einsatz des Zertifikats innerhalb der\n' +
@@ -411,25 +411,25 @@ async function createPage() {
                     '        </div>\n' +
                     '    </div>\n' +
                     '    <div class="row section">\n' +
-                    '            <a id="form-content"></a>\n'+
                     '        <div class="col">\n' +
+                    '            <a id="form-content"></a>\n'+
                     '<h2 class="color-inherit mb-5 bolder">Interesse geweckt?</h2>\n' +
-                '<p class="font-size-small" style="margin-bottom: 20px">Nehmen Sie jetzt an der Zertifizierung teil und sichern Sie sich als einer der ersten Vermittler\n' +
+                '<p style="margin-bottom: 20px">Nehmen Sie jetzt an der Zertifizierung teil und sichern Sie sich als einer der ersten Vermittler\n' +
                     'unsere unabhängige und renommierte Auszeichnung.</p>\n' +
-               ' <p class="font-size-small" style="margin-bottom: 50px">Füllen Sie unser Kontaktformular wir melden uns bei Ihnen, um einen Termin zu vereinbaren.</p>\n' +
-                '<p class="font-size-small" style="margin-bottom: 20px">Falls Sie weitere Fragen haben oder Unterstützung benötigen, stehen wir Ihnen jederzeit zur Verfügung.</p>\n' +
-              '  <p class="font-size-small" style="margin-bottom: 50px">Ihr Erfolg liegt uns am Herzen.</p>\n' +
+               ' <p style="margin-bottom: 50px">Füllen Sie unser Kontaktformular wir melden uns bei Ihnen, um einen Termin zu vereinbaren.</p>\n' +
+                '<p style="margin-bottom: 20px">Falls Sie weitere Fragen haben oder Unterstützung benötigen, stehen wir Ihnen jederzeit zur Verfügung.</p>\n' +
+              '  <p style="margin-bottom: 50px">Ihr Erfolg liegt uns am Herzen.</p>\n' +
                ' <div class="card">\n' +
                  '   <div class="card-content">\n' +
                        ' <div class="row">\n' +
                           '  <div class="col">\n' +
-                              '  <p class="font-size-small">Ihr Ansprechpartner ist</p>\n' +
-                               ' <p class="font-size-small" style="margin-bottom: 20px"><strong>Florian Blöthner</strong></p>\n' +
-                               ' <div class="font-size-small flex mb-1">\n' +
+                              '  <p>Ihr Ansprechpartner ist</p>\n' +
+                               ' <p style="margin-bottom: 20px"><strong>Florian Blöthner</strong></p>\n' +
+                               ' <div class="flex mb-1">\n' +
                                  '   <img src="./assets/img/envelope-regular.svg" alt="mail" width="15" height="15" class="mr-1">\n' +
                                         '<span>sales@fmh</span>\n' +
                                ' </div>\n' +
-                               ' <div class="font-size-small flex">\n' +
+                               ' <div class="flex">\n' +
                                    ' <img src="./assets/img/phone-solid.svg" alt="phone" width="15" height="15" class="mr-1">\n' +
                                      '   <span>+49 (0) 69 951 898 37</span>\n' +
                                 '</div>\n' +

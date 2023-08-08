@@ -16,7 +16,7 @@ function setHeights() {
         // Height of content to show/hide
         let heightOfContent = content.getBoundingClientRect().height;
         // Set a CSS custom property with the height of content
-        container.style.setProperty("--containerHeight", `${heightOfContent}px`);
+        container.style.setProperty("--containerHeight", `${heightOfContent + 50}px`);
         // Once height is read and set
         setTimeout(e => {
             container.classList.add("height-is-set");
