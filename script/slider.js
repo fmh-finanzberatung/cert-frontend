@@ -1,5 +1,5 @@
 let i = 0; // current slide
-let j = 2; // total slides
+let j = 3; // total slides
 
 function hideOrShowPrevBtn(index) {
     const el = document.getElementById('prev');

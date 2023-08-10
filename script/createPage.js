@@ -311,8 +311,8 @@ async function createPage() {
         '    </div>\n' +
         '</div>');
       box5.insertAdjacentHTML('beforeend', '<div class="background-primary">\n' +
-        '    <div class="layout">\n' +
-        '        <div class="slider" style="position: relative">\n' +
+        '    <div class="layout" style="position: relative">\n' +
+        '        <div class="slider">\n' +
         '            <div class="slider-container">\n' +
         '                <div id="content1" class="active slide">\n' +
         '                    <div class="wrapper align-center wrap">\n' +
@@ -340,62 +340,61 @@ async function createPage() {
         '                    <div class="wrapper align-center wrap">\n' +
         '                        <div class="mb-0 mr-5">' +
         '                           <img' +
-        '                             srcset="./assets/img/testimonial-christoph-mueller-small.webp 320w,' +
-        '                                     ./assets/img/testimonial-christoph-mueller-medium.webp 640w"\n' +
+        '                             srcset="./assets/img/testimonial-timm-grosskurth-small.webp 320w,' +
+        '                                     ./assets/img/testimonial-timm-grosskurth-small.webp 640w"\n' +
         '                             sizes="(max-width: 320px) 320px, 320px;' +
         '                                    (max-width: 640px) 640px, 640px;"' +
         '                             height="200"' +
         '                             width="200"' +
-        '                             src="./assets/img/testimonial-christoph-mueller-medium.webp"' +
-        '                             alt="Franz Lücke" ' +
+        '                             src="./assets/img/testimonial-timm-grosskurth-medium.webp"' +
+        '                             alt="Timm Großkurth" ' +
         '                             class="circle-200"/>\n' +
         '                        </div>\n' +
         '                        <div class="column mb-0">\n' +
         '                            <p class="italic mb-1">\n' +
         '                              „Ich bin seit jeher überzeugt, dass die Immobilienfinanzierungsberatung mit Qualität und \n' +
-        'Service in der Endabrechnung für den Kunden die größte Ersparnis bringt. Der reine Blick \n' +
-        'auf Zinssätze, besonders in der Phase der Beratersuche, kann das Bild verfälschen und zu \n' +
-        'einem nachteiligen Ergebnis für den Verbraucher führen. FMH richtet mit dem Zertifikat den \n' +
-        'Fokus auf die Dienstleistungen und erhöht damit die Transparenz für die \n' +
-        'Finanzierungsinteressenten.“\n' +
+        '                              Service in der Endabrechnung für den Kunden die größte Ersparnis bringt. Der reine Blick \n' +
+        '                              auf Zinssätze, besonders in der Phase der Beratersuche, kann das Bild verfälschen und zu \n' +
+        '                              einem nachteiligen Ergebnis für den Verbraucher führen. FMH richtet mit dem Zertifikat den \n' +
+        '                              Fokus auf die Dienstleistungen und erhöht damit die Transparenz für die \n' +
+        '                              Finanzierungsinteressenten.“\n' +
         '                            </p>\n' +
         '                            <p class="bolder text-secondary text-align-right">Timm Großkurth | Geschäftsführer | HW BAUFI Finanzgruppe GmbH</p>\n' +
         '                        </div>\n' +
         '                    </div>\n' +
         '                </div>\n' +
-        '            </div>\n' +
-        '                <div id="content3" class="slide">\n' +
-        '                    <div class="wrapper align-center wrap">\n' +
-        '                        <div class="mb-0 mr-5">' +
-        '                           <img' +
-        '                             srcset="./assets/img/testimonial-christoph-mueller-small.webp 320w,' +
-        '                                     ./assets/img/testimonial-christoph-mueller-medium.webp 640w"\n' +
-        '                             sizes="(max-width: 320px) 320px, 320px;' +
-        '                                    (max-width: 640px) 640px, 640px;"' +
-        '                             height="200"' +
-        '                             width="200"' +
-        '                             src="./assets/img/testimonial-christoph-mueller-medium.webp"' +
-        '                             alt="Franz Lücke" ' +
-        '                             class="circle-200"/>\n' +
-        '                        </div>\n' +
-        '                        <div class="column mb-0">\n' +
-        '                            <p class="italic mb-1">\n' +
-        '                              „Das Zertifikat von FMH bedeutet, mit einer der besten und zuverlässigsten \n' +
-        'Finanzierungspartner im Markt zu sein. Unsere Marken BAUFI DIREKT und HAUS & \n' +
-        'WOHNEN wurden unabhängig und objektiv getestet. Die gesetzten Qualitätsstandards \n' +
-        'unterstützen den Verbraucher bei der Vertrauensbildung und der Recherche für den \n' +
-        'bestmöglichen Service.“\n' +
-        '                            </p>\n' +
-        '                            <p class="bolder text-secondary text-align-right">Roland Gisinger | Geschäftsführer | BauFi Direkt Finanzierungspartner GmbH</p>\n' +
-        '                        </div>\n' +
-        '                    </div>\n' +
-        '                </div>\n' +
-        '            </div>\n' +
-
-        '            <div class="dot-container">\n' +
-        '                <button onclick = "dot(1)"></button>\n' +
-        '                <button onclick = "dot(2)"></button>\n' +
-        '                <button onclick = "dot(3)"></button>\n' +
+          '                <div id="content3" class="slide">\n' +
+          '                    <div class="wrapper align-center wrap">\n' +
+          '                        <div class="mb-0 mr-5">' +
+          '                           <img' +
+          '                             srcset="./assets/img/testimonial-roland-gisinger-small.webp 320w,' +
+          '                                     ./assets/img/testimonial-roland-gisinger-medium.webp 640w"\n' +
+          '                             sizes="(max-width: 320px) 320px, 320px;' +
+          '                                    (max-width: 640px) 640px, 640px;"' +
+          '                             height="200"' +
+          '                             width="200"' +
+          '                             src="./assets/img/testimonial-roland-gisinger-medium.webp"' +
+          '                             alt="Roland Gisinger" ' +
+          '                             class="circle-200"/>\n' +
+          '                        </div>\n' +
+          '                        <div class="column mb-0">\n' +
+          '                            <p class="italic mb-1">\n' +
+          '                              „Das Zertifikat von FMH bedeutet, mit einer der besten und zuverlässigsten \n' +
+          '                              Finanzierungspartner im Markt zu sein. Unsere Marken BAUFI DIREKT und HAUS & \n' +
+          '                              WOHNEN wurden unabhängig und objektiv getestet. Die gesetzten Qualitätsstandards \n' +
+          '                              unterstützen den Verbraucher bei der Vertrauensbildung und der Recherche für den \n' +
+          '                              bestmöglichen Service.“\n' +
+          '                            </p>\n' +
+          '                            <p class="bolder text-secondary text-align-right">Roland Gisinger | Geschäftsführer | BauFi Direkt Finanzierungspartner GmbH</p>\n' +
+          '                        </div>\n' +
+          '                    </div>\n' +
+          '                </div>\n' +
+          '            </div>\n' +
+          '            <div class="dot-container">\n' +
+          '                <button onclick = "dot(1)"></button>\n' +
+          '                <button onclick = "dot(2)"></button>\n' +
+          '                <button onclick = "dot(3)"></button>\n' +
+          '            </div>\n' +
         '            </div>\n' +
         '            <button id="prev" onclick="prev()" class="hide" aria-labelledby="Prev"><img height="40" width="40" src="./assets/img/greater-than-solid.svg" alt="Prev" class="rotate-prev"></button>\n' +
         '            <button id="next" onclick="next()" aria-labelledby="Next"><img height="40" width="40" src="./assets/img/greater-than-solid.svg" alt="Next"></button>\n' +
