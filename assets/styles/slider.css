@@ -24,7 +24,7 @@
 .slide .wrapper .column p {
     margin-bottom: 10px;
 }
-.rotate-prev {
+.rotate-next {
     transform: rotate(180deg);
 }
 .dot-container {
