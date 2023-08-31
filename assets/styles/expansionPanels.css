@@ -80,7 +80,7 @@
   max-height: 0;
 }
 .content[aria-hidden="false"] {
-  max-height: var(--containerHeight, 1000px);
+  max-height: var(--containerHeight);
 }
 
 .trigger {
