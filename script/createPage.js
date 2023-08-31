@@ -15,21 +15,23 @@ async function createPage() {
       const box5 = document.createElement("div");
 
       box1.insertAdjacentHTML('beforeend', '<div class="first-box">\n' +
-        '    <img' +
-        '            width="600" \n' +
-        '            height="200"\n' +
-        '            src="./assets/img/Logo.webp" \n' +
-        '            srcset="./assets/img/Logo.webp 1250w, ./assets/img/Logo-medium.webp 640w, ./assets/img/Logo-medium.webp 320w,"\n' +
-        '            sizes="(max-width: 1250px) 1250px,(max-width: 640px) 640px,(max-width: 320px) 320px, "\n' +
-        '            alt="FMH Finanzberatung"\n' +
-        '            />\n' +
-        '    <div class="title-container">\n' +
-        '        <h1>Das FMH-Zertifikat für Baufinanzierungsvermittler</h1>\n' +
-        '        <h2>Expertise auf höchstem Niveau</h2> \n' +
-        '    </div>\n' +
-        '    <div class="contact">\n' +
-        '        <a href="#form-content">Kontakt</a>\n' +
-        '    </div>\n' +
+       '<div class="first-box-content">\n' +
+          '    <img' +
+          '            width="600" \n' +
+          '            height="200"\n' +
+          '            src="./assets/img/Logo.webp" \n' +
+          '            srcset="./assets/img/Logo.webp 1250w, ./assets/img/Logo-medium.webp 640w, ./assets/img/Logo-medium.webp 320w,"\n' +
+          '            sizes="(max-width: 1250px) 1250px,(max-width: 640px) 640px,(max-width: 320px) 320px, "\n' +
+          '            alt="FMH Finanzberatung"\n' +
+          '            />\n' +
+       '    <div class="title-container">\n' +
+       '        <h1>Das FMH-Zertifikat für Baufinanzierungsvermittler</h1>\n' +
+       '        <h2>Geprüfte Expertise für echten Kundennutzen.</h2> \n' +
+       '    </div>\n' +
+       '    <div class="contact">\n' +
+       '        <a href="#form-content">Kontakt</a>\n' +
+       '    </div>\n' +
+       '</div>\n'+
         '</div>');
 
       box2.insertAdjacentHTML('beforeend', '<div class="secondary-box layout">\n' +
@@ -39,56 +41,52 @@ async function createPage() {
         '                    ./assets/img/zitat-max-herbst-medium.webp 640w"\n' +
         '            sizes="(max-width: 320px) 320px, 320px;' +
         '                   (max-width: 640px) 640px, 640px;"' +
-        '           height="100"' +
-        '           width="100"' +
+        '           height="200"' +
+        '           width="200"' +
         '           src="./assets/img/zitat-max-herbst-medium.webp"' +
         '           alt="Max Herbst" ' +
-        '           class="circle"/>\n' +
+        '           class="circle-200"/>\n' +
         '        <div class="author-box">\n' +
-        '            <p class="italic font-size-medium">„Unser Zertifikat trennt die Spreu vom Weizen.”</p>\n' +
-        '            <p class="text-secondary bolder text-align-right">Max Herbst, Inhaber der FMH-Finanzberatung</p>\n' +
+        '            <p class="italic font-size-medium">„Das Zertifikat belegt: Wirklich gute Baufinanzierungsvermittler haben mehr zu bieten als nur gute Zinsen.”</p>\n' +
+        '            <p class="text-secondary"><span class=" text-secondary bolder">Max Herbst</span> | <span class=" text-secondary bolder">Inhaber FMH-Finanzberatung</span></p>\n' +
         '        </div>\n' +
         '\n' +
         '    </div>\n' +
-        '      <p class="mb-5">In Deutschland stehen rund 1.000 Banken etwa 50.000 Vermittlern' +
-        '         für Baufinanzierung gegenüber. Angesichts dieser Auswahl ist es als Kunde kompliziert, den passenden' +
-        '         Kandidaten zu finden. Zwar müssen alle Vermittler einen Sachkunde-Nachweis erbringen, um ihr Business' +
-        '         ausüben zu dürfen, aber wer eine Finanzierung sucht, benötigt mehr als das. Gerade in einem schwierigen ' +
-        '         Umfeld sind eine langfristige, solide Betreuung und kundenbezogene Beratung essenziell. Hier setzt das FMH-Zertifikat an. \n' +
-        '      </p>\n' +
-        '        <p class="text-align-right italic font-size-medium">“Wir schätzen die FMH-Finanzberatung für ihre Seriosität</p>\n' +
-        '        <p class="text-align-right italic font-size-medium">in Bezug auf Zinsen und Bedingungen und ihre</p>\n' +
-        '        <p class="text-align-right italic mb-1 font-size-medium">Unabhängigkeit von Anbietern”</p>\n' +
-        '        <p class="text-secondary bolder text-align-right">Baufi Veteran, Interhyp</p>\n' +
+        '      <p class="mb-5">Rund 1.000 Banken kooperieren in Deutschland mit ca. 50.000 Vermittlern für die ' +
+          '                    Baufinanzierung. Darunter gibt es exzellente, gute und weniger gute Vermittler. Doch woher sollen Kunden ' +
+          '                    wissen, welche der ca. 50.000 Vermittler in welche Kategorie fällt? Zwar müssen in Deutschland alle ' +
+          '                    Vermittler einen Sachkunde-Nachweis erbringen, doch für die vielleicht wichtigste finanzielle Entscheidung' +
+          '                    im Leben, wünschen Kunden sich mehr als Sachkunde: Sie wollen individuelle Beratung und Unterstützung. ' +
+          '                    Genau deshalb gibt es jetzt das FMH-Zertifikat für Baufinanzierungsvermittler. </p>\n' +
         '</div>')
 
       box3.insertAdjacentHTML('beforeend', '<div class="background-primary">\n' +
         '    <div class="layout box3">\n' +
         '        <div class="box3-wrapper">\n' +
-        '            <p class="bolder">Auf dieser Seite</p>\n' +
+        '            <p class="bolder">Übersicht</p>\n' +
         '            <div>\n' +
         '                <img src="./assets/img/arrow-right-solid.svg" alt="arrow-right" height="15" width="15">\n' +
-        '                <a class="box2-link" href="#">Warum ein Zertifikat?</a>\n' +
+        '                <a class="box2-link" href="#warum">Warum ein Zertifikat für Baufinanzierungsvermittler?</a>\n' +
         '            </div>\n' +
         '            <div>\n' +
         '                <img src="./assets/img/arrow-right-solid.svg" alt="arrow-right" height="15" width="15">\n' +
-        '                <a class="box2-link" href="#">Grundvoraussetzungen für den Erwerb des Zertifikats</a>\n' +
+        '                <a class="box2-link" href="#grundvoraussetzungen">Grundvoraussetzungen zum Erwerb des Zertifikats</a>\n' +
         '            </div>\n' +
         '            <div>\n' +
         '                <img src="./assets/img/arrow-right-solid.svg" alt="arrow-right" height="15" width="15">\n' +
-        '                <a class="box2-link" href="#">Ablauf und Kriterien</a>\n' +
+        '                <a class="box2-link" href="#ablauf">Antrag und Ablauf der Prüfung</a>\n' +
         '            </div>\n' +
         '            <div>\n' +
         '                <img src="./assets/img/arrow-right-solid.svg" alt="arrow-right" height="15" width="15">\n' +
-        '                <a class="box2-link" href="#">Mehwert</a>\n' +
+        '                <a class="box2-link" href="#mehrwert">Mehrwert für Baufinanzierungsvermittler</a>\n' +
         '            </div>\n' +
         '            <div>\n' +
         '                <img src="./assets/img/arrow-right-solid.svg" alt="arrow-right" height="15" width="15">\n' +
-        '                <a class="box2-link" href="#">Zertifizierung anfragen</a>\n' +
+        '                <a class="box2-link" href="#form-content">Die Zertifizierung anfragen</a>\n' +
         '            </div>\n' +
         '            <div>\n' +
         '                 <img src="./assets/img/arrow-right-solid.svg" alt="arrow-right" height="15" width="15">\n' +
-        '                  <a class="box2-link" href="#">Vermittler mit unserem Zertifikat</a>\n' +
+        '                  <a class="box2-link" href="#vermittler">Vermittler mit unserem Zertifikat</a>\n' +
         '            </div>\n' +
         '        </div>\n' +
         '        <div class="image2"><img height="250" width="350" src="./assets/img/FMH-Zertifikat-medium.webp" alt="FMH-Zertifikat."></div>\n' +
@@ -96,14 +94,19 @@ async function createPage() {
         '</div>');
       box4.insertAdjacentHTML('beforeend', '<div class="layout">\n' +
         '    <div class="box4">\n' +
-        '        <h2>Warum ein Zertifikat?</h2>\n' +
+          '            <a id="warum"></a>\n' +
+        '        <h2>Warum ein Zertifikat für Baufinanzierungsvermittler?</h2>\n' +
         '        <div>\n' +
-        '           <p class="mb-5">Bei eigener exzellenter Beratungsleistung und Servicestandards fragen Sie sich sicher immer wieder, wie Sie sich von Ihren Mitbewerbern abheben können.\n' +
-        '                Die Lösung ist das FMH-Zertifikat &#8222;geprüft & gecheckt &#8221;. Es bewertet vorrangig den technischen Standard, die Beratungsintensität, die Betreuung zwischen\n' +
-        '                Unterschrift und Darlehensauszahlung sowie den Service nach erfolgter Auszahlung. Ob das Zinsangebot gut oder weniger gut ist, können Kunden sehr\n' +
-        '                schnell feststellen, nicht aber, was sie an Consulting erhalten. Durch das FMH-Zertifikat lässt sich die Qualität der Beratung auf einen Blick erkennen und\n' +
-        '                differenziert Sie von Ihren Mitbewerbern. Überzeugen Sie mit Ihrem Servicemaßstab!' +
-        '          </p>\n' +
+        '           <p class="mb-5">Trotz exzellenter Beratungsleistung und hohen Servicestandards fragen Sie sich ' +
+          '                         sicher manchmal, wie Sie sich von Ihren Mitbewerbern abheben können. ' +
+          '                         Das FMH-Zertifikat „geprüft & gecheckt“ bietet Ihnen diese Möglichkeit: Es bewertet' +
+          '                         nicht das Zinsangebot, das sich täglich ändern kann, sondern vorrangig den ' +
+          '                         technischen Standard, die Beratungsintensität, die Betreuung zwischen Unterschrift ' +
+          '                         und Darlehensauszahlung sowie den Service nach erfolgter Auszahlung.' +
+          '                         Ob das Zinsangebot gut oder weniger gut ist, können Kunden nach 15 Minuten ' +
+          '                         feststellen, nicht aber, was sie an Betreuung und Dienstleistung erhalten.' +
+          '                         Das FMH-Zertifikat soll genau diesen Mehrwert herausstellen.</p>\n' +
+          '            <a id="grundvoraussetzungen"></a>\n' +
         '        </div>\n' +
         '        <h2>Grundvoraussetzungen zum Erwerb des Zertifikats</h2>\n' +
         '        <div class="row section-basic-requirements">\n' +
@@ -120,30 +123,37 @@ async function createPage() {
         '               />\n' +
         '         </div>\n' +
         '         <div class="col align-center">\n' +
-        '          <span>Die zu prüfenden Baufinanzierungsvermittler müssen IHK-geprüft und eine\n' +
-        '           behördliche Erlaubnis im Sinne des Paragrafen 34i der Gewerbeordnung\n' +
-        '           vorweisen.</span>\n' +
+        '          <span>Jeder Baufinanzierungsvermittler muss in Deutschland IHK-geprüft sein und eine behördliche ' +
+          '              Erlaubnis im Sinne des Paragrafen 34i der Gewerbeordnung vorweisen: Diese Grundvoraussetzung ' +
+          '              muss erfüllt sein, um das FMH-Zertifikat beantragen zu können</span>\n' +
         '         </div>\n' +
+          '            <a id="ablauf"></a>\n' +
         '        </div>\n' +
         '        <h2  style="margin-top: 50px">Ablauf der Prüfung & Auswertung</h2>\n' +
         '        <div class="wrapper column pl-0">\n' +
         '            <div>\n' +
         '                <span class="number">1</span>\n' +
-        '                <span class="max-w-80">Nachdem Sie unser <a href="#form-content" class="text-secondary">Kontaktformular</a> ausgefüllt und abgeschickt haben, lassen wir Ihnen unseren Preisvorschlag und ein\n' +
-        '                     Auftragsformular zukommen.' +
+        '                <span class="max-w-80">Nachdem Sie unser <a href="#form-content" class="text-secondary">Kontaktformular</a> ausgefüllt und abgeschickt haben, lassen wir Ihnen das Auftragsformular inkl. Allen wichtigen Infos (Preis, rechtliche Vorgaben und Abwicklung)\n' +
+        '                     zukommen.' +
         '                </span>\n' +
         '            </div>\n' +
         '            <div>\n' +
         '                <span class="number">2</span>\n' +
-        '                <span class="max-w-80">Sie schicken uns den vollständig ausgefüllten Antrag ganz bequem per E-Mail zurück.\n' +
-        '                     Sollten Sie Hilfe beim Ausfüllen benötigen, steht Ihnen ein persönlicher Ansprechpartner gerne zur Seite.' +
-        '               </span>\n' +
+        '                <span class="max-w-80">' +
+          '                Sie schicken uns den vollständig ausgefüllten Auftrag per E-Mail zurück.' +
+          '                Sollten Sie Fragen vorweg haben, steht Ihnen ein persönlicher' +
+          '                Ansprechpartner gern zur Seite.' +
+          '              </span>\n' +
         '            </div>\n' +
         '            <div>\n' +
         '                <span class="number">3</span>\n' +
-        '                <p class="max-w-80">Wir prüfen Ihre Unterlagen und unterbreiten Ihnen innerhalb von [Zeitangabe] einige Terminvorschläge. </br>\n' +
-        '                   <strong>Unser Tipp:</strong> Legen Sie am besten bereits vorab einen internen Ansprechpartner für die Zertifizierung fest.\n' +
-        '                </p>\n' +
+        '                <p class="max-w-80">' +
+          '                 Da wir die Prüfung vor Ort persönlich vornehmen, erwarten wir für die Durchführung der ' +
+          '                 Überprüfung Ihrer Dienstleistungen, dass Sie 70 Prozent der anfallenden Gebühr vor einer ' +
+          '                 Terminvereinbarung an die FMH-Finanzberatung zahlen. Anschließend meldet sich unsere ' +
+          '                 Prüferin/Prüfer bei Ihnen, um einen Besuchstermin zu vereinbaren. Legen Sie am besten ' +
+          '                 bereits vorab einen internen Ansprechpartner für die Zertifizierung fest.' +
+          '             </p>\n' +
         '            </div>\n' +
         '            <div class="info-container align-center">\n' +
         '               <img src="./assets/img/information.svg" alt="info" width="30" height="30">\n' +
@@ -156,18 +166,18 @@ async function createPage() {
         '         <div>\n' +
         '            <span class="number">4</span>\n' +
         '            <span class="max-w-80">Wenn der Termin feststeht, besucht Sie eine FMH-Mitarbeiterin/Mitarbeiter in Ihren Räumlichkeiten,\n' +
-        '                 um die Zertifizierung durchzuführen.<br/>\n' +
+        '                 um die Überprüfung durchzuführen.<br/>\n' +
         '                 <strong>Wichtig:</strong> Um einem reibungslosen Ablauf zu ermöglichen, sollte der von Ihnen ernannte Ansprechpartner<br/>\n' +
         '                 am Tag der Prüfung ca. 3 Stunden von allen anderen Verpflichtungen befreit sein.' +
         '           </span>\n' +
         '        </div>\n' +
         '        <div>\n' +
         '           <span class="number">5</span>\n' +
-        '           <span class="max-w-80">\n' +
-        '                  Die FMH-Mitarbeiterin/Mitarbeiter fasst die notierten Antworten Ihres internen Ansprechpartners direkt im Anschluss<br/>\n' +
-        '                  zusammen und lässt Sie gegenzeichnen.<br/>\n' +
-        '                  Beide Parteien verpflichten sich zur Verschwiegenheit über die erhaltenen Interna und Abläufe.\n' +
-        '           </span>\n' +
+        '           <span class="max-w-80">' +
+          '             Der FMH-Mitarbeiter geht am Ende der „Bestandsaufnahme“ die notierten Antworten nochmals durch' +
+          '             und lässt Sie oder Ihren Mitarbeiter gegenzeichnen. Beide Parteien verpflichten sich zur' +
+          '             Verschwiegenheit über die erhaltenen Interna und Abläufe.' +
+          '        </span>\n' +
         '        </div>\n' +
         '        <div>\n' +
         '            <span class="number">6</span>\n' +
@@ -176,10 +186,11 @@ async function createPage() {
         '                 diskret. Das Ergebnis teilen wir Ihnen innerhalb von fünf Arbeitstagen mit.\n' +
         '            </span>\n' +
         '        </div>\n' +
+      '            <a id="vermittler"></a>\n' +
         '        </div>\n' +
         '        <h2  style="margin-top: 50px">Kriterien, die Vermittler erfüllen müssen</h2>\n' +
-        '        <p class="mb-5">Die FMH-Finanzberatung hat bei ihrer Prüfung für das FMH-Zertifikat 88 Fragen definiert. Damit Sie sich eine Vorstellung machen können, hier ein Auszug:</p>\n' +
-        '        <div class="layout">\n' +
+        '        <p class="mb-5">Die FMH-Finanzberatung hat bei ihrer Prüfung für das FMH-Zertifikat 90 Fragen definiert. Damit Sie sich eine Vorstellung machen können, hier ein Auszug:</p>\n' +
+        '        <div>\n' +
         '        <div class="panels-container">\n' +
         '    <div class="container">\n' +
         '        <div class="v-expansion-panel">\n' +
@@ -191,20 +202,15 @@ async function createPage() {
         '            <div class="content">\n' +
         '                <div class="v-expansion-panel-text">\n' +
         '                    <div class="v-expansion-panel-text__wrapper">\n' +
-        '                        <p class="mb-1"><strong>Transparente Zinsaussagen und Berechnungstool:</strong> Sie ermöglichen echte Zinsaussagen auf Ihrer Website und bieten ein\n' +
-        '                            praktisches Berechnungstool ohne vorherige Dateneingabe.</p>\n' +
         '                        <p class="mb-1"><strong>Vorab-Zinsinformationen ohne Dateneingabe:</strong> Sie bieten Zinsinformationen vor der Eingabe persönlicher Daten, um\n' +
-        '                            Transparenz und Vertrauen zu schaffen.</p>\n' +
-        '                        <p class="mb-1"><strong>Direkte schriftliche Anfragemöglichkeit:</strong> Sie ermöglichen eine unkomplizierte schriftliche Anfrage über Ihre Website für schnelle\n' +
-        '                            und effiziente Kommunikation.</p>\n' +
-        '                        <p class="mb-1"><strong>Vielseitiger Kreditvergleich:</strong> Sie ermöglichen den Kunden, verschiedene Kreditinstitute gleichzeitig zu vergleichen, um die beste\n' +
-        '                            Finanzierungslösung zu finden.</p>\n' +
-        '                        <p class="mb-1"><strong>Professionelle Kundenbetreuung durch CRM-System:</strong> Sie setzen ein leistungsstarkes CRM-System ein, um eine professionelle\n' +
-        '                            Kundenbetreuung und herausragenden Service zu gewährleisten.</p>\n' +
-        '                        <p class="mb-1"><strong>Digitale Beratungsoptionen:</strong> Sie bieten flexible digitale Beratungsmöglichkeiten wie Video-Calls, um eine individuelle und\n' +
-        '                            kundenorientierte Beratung anzubieten.</p>\n' +
+        '                            einen schnellen Überblick zu ermöglichen.</p>\n' +
+        '                        <p class="mb-1"><strong>Direkte schriftliche Anfrageoption:</strong> Sie ermöglichen eine unkomplizierte schriftliche Anfrage über Ihre Website.\n' +
+        '                        </p>\n' +
+        '                        <p class="mb-1"><strong>Vielseitiger Kreditvergleich:</strong> Sie haben die Möglichkeit, Ihren Kunden, verschiedene Kreditinstitute gleichzeitig aufzuzeigen, um die beste Finanzierungslösung zu finden.</p>\n' +
+        '                        <p class="mb-1"><strong>Professionelle Kundenbetreuung durch CRM-System:</strong> Sie setzen ein leistungsstarkes CRM-System ein, um eine reibungslose Kundenbetreuung und Service zu gewährleisten.</p>\n' +
+        '                        <p class="mb-1"><strong>Digitale Beratungsoptionen:</strong> Sie bieten auch digitale Beratungsmöglichkeiten per Video-Calls oder Telefon an, um eine individuelle Beratung zu ermöglichen.</p>\n' +
         '                        <p class="mb-1"><strong>Eigene digitale Services:</strong> Sie bieten maßgeschneiderte digitale Services wie Rechner und Antragsstrecken an, um den Finanzierungsprozess zu erleichtern.</p>\n' +
-        '                        <p class="mb-1"><strong>Erreichbarkeit in Ausnahmesituationen:</strong> Sie garantieren eine stets erreichbare Ansprechperson, selbst während Urlaubs- oder Krankheitsphasen.</p>\n' +
+        '                        <p class="mb-0"><strong>Erreichbarkeit in Ausnahmesituationen:</strong> Sie garantieren eine stets erreichbare Ansprechperson, selbst während Urlaubs- oder Krankheitsphasen.</p>\n' +
         '                    </div>\n' +
         '                </div>\n' +
         '            </div>\n' +
@@ -222,17 +228,12 @@ async function createPage() {
         '                <div class="v-expansion-panel-text">\n' +
         '                    <div class="v-expansion-panel-text__wrapper">\n' +
         '                        <p class="mb-1"><strong>Servicelevel:</strong> Sie reagieren innerhalb eines definierten Zeitraums auf Kundenanfragen.</p>\n' +
-        '                        <p class="mb-1"><strong>Beratungssprachen:</strong> Sie beraten Ihre Kunden auch auf Englisch oder anderen Fremdsprachen an.</p>\n' +
-        '                        <p class="mb-1"><strong>Erste Gesprächsinformationen:</strong> Kunden erhalten umfassende Informationen beim ersten Gespräch.</p>\n' +
+        '                        <p class="mb-1"><strong>Beratungssprachen:</strong> Sie beraten Ihre Kunden auch auf Englisch oder anderen Fremdsprachen.</p>\n' +
         '                        <p class="mb-1"><strong>Service-Kontrolle und Dokumentation:</strong> Sie verfügen über eine Service-Kontrolle oder Dokumentation für den Beratungsprozess.</p>\n' +
-        '                        <p class="mb-1"><strong>Kundenzentrierte Beratungsarten:</strong> Sie bieten verschiedene kundenzentrierte Beratungsarten an.</p>\n' +
-        '                        <p class="mb-1"><strong>Gesprächsvorbereitung:</strong> Sie bereiten sich sorgfältig auf das Gespräch vor.</p>\n' +
-        '                        <p class="mb-1"><strong>Machbarkeitsaussagen ohne Einkommensfragen:</strong> Sie machen auch ohne Einkommensfragen Machbarkeitsaussagen.</p>\n' +
         '                        <p class="mb-1"><strong>Berücksichtigung weiterer Kosten:</strong> Sie berücksichtigen auch Kosten für Umzug, Renovierung der Altwohnung, etc.</p>\n' +
-        '                        <p class="mb-1"><strong>Unterstützung bei Unterlagenbeschaffung:</strong> Sie helfen dabei, wichtige Unterlagen und Informationen zu besorgen.</p>\n' +
+        '                        <p class="mb-1"><strong>Unterstützung bei Unterlagenbeschaffung:</strong> Sie helfen dabei, wichtige Unterlagen und Informationen digital zu organisieren.</p>\n' +
         '                        <p class="mb-1"><strong>Berücksichtigung von Fördermitteln:</strong> Sie berücksichtigen öffentliche Fördermittel (KfW, Landesfördermittel).</p>\n' +
-        '                        <p class="mb-1"><strong>Informationen über Absicherung:</strong> Sie informieren Ihre Kunden über Immobilien-/Finanzierungsabsicherung.</p>\n' +
-        '                        <p class="mb-1"><strong>Aufklärung über Vertragsrisiken und Instandhaltungskosten:</strong> Sie klären über die Risiken im Darlehensvertrag und zukünftige Instandhaltungskosten auf.</p>\n' +
+        '                        <p class="mb-0"><strong>Aufklärung über Vertragsrisiken und Instandhaltungskosten:</strong> Sie klären über die Risiken im Darlehensvertrag und zukünftige Instandhaltungskosten auf.</p>\n' +
         '                    </div>\n' +
         '                </div>\n' +
         '            </div>\n' +
@@ -248,12 +249,10 @@ async function createPage() {
         '            <div class="content">\n' +
         '                <div class="v-expansion-panel-text">\n' +
         '                    <div class="v-expansion-panel-text__wrapper">\n' +
-        '                        <p class="mb-1"><strong>Kontinuierliche Betreuung nach Vertragsabschluss:</strong> Sie gewährleisten eine engagierte Betreuung und Unterstützung Ihrer Kunden zwischen dem Abschluss des Darlehensvertrags und der Auszahlung des Kredits.</p>\n' +
-        '                        <p class="mb-1"><strong>Effizientes Auszahlungsmanagement:</strong> Sie verfügen über ein professionelles Auszahlungsmanagement, das eine reibungslose Abwicklung der Kreditauszahlung sicherstellt.</p>\n' +
-        '                        <p class="mb-1"><strong>Langfristiger Kundenservice:</strong> Ihr Service endet nicht mit der Darlehensauszahlung; Sie bleiben auch danach weiterhin der Ansprechpartner für Ihre Kunden.</p>\n' +
-        '                        <p class="mb-1"><strong>Aufmerksamkeit durch Give-aways:</strong> Sie zeigen besondere Aufmerksamkeit gegenüber Ihren Kunden, zum Beispiel durch das Versenden von Give-aways wie Blumen zum Einzug in die Immobilie.</p>\n' +
+        '                        <p class="mb-1"><strong>Kontinuierliche Betreuung nach Vertragsabschluss:</strong> Sie gewährleisten eine engagierte Betreuung Ihrer Kunden zwischen dem Vertragsabschluss und der Auszahlung des Kredits.</p>\n' +
+        '                        <p class="mb-1"><strong>Effizientes Auszahlungsmanagement:</strong> Sie verfügen über ein professionelles Auszahlungsmanagement.</p>\n' +
         '                        <p class="mb-1"><strong>Professionelles Beschwerdemanagement:</strong> Sie verfügen über ein effektives Beschwerdemanagement, um Kundenanliegen zeitnah und professionell zu bearbeiten.</p>\n' +
-        '                        <p class="mb-1"><strong>Fortbildungsangebot für Mitarbeiter:</strong> Sie bieten ein strukturiertes Fortbildungsangebot, um sicherzustellen, dass Ihre Mitarbeiter stets auf dem neuesten Stand sind und ihre Beratungskompetenz kontinuierlich verbessert wird.</p>\n' +
+        '                        <p class="mb-0"><strong>Fortbildungsangebot für Mitarbeiter:</strong> Sie bieten ein strukturiertes Fortbildungsangebot, um sicherzustellen, dass Ihre Mitarbeiter stets auf dem neuesten Stand sind und ihre Beratungskompetenz kontinuierlich verbessert wird.</p>\n' +
         '                    </div>\n' +
         '                </div>\n' +
         '            </div>\n' +
@@ -273,18 +272,18 @@ async function createPage() {
         '                        <p class="mb-1"><strong>Pflege der Kundenbeziehung:</strong> Sie pflegen regelmäßigen Kontakt zu Ihren Kunden zu besonderen Anlässen wie Weihnachten, Geburtstagen, etc., um eine langfristige Kundenbindung zu gewährleisten.</p>\n' +
         '                        <p class="mb-1"><strong>Unterstützung bei Immobilienpreisfindung:</strong> Sie unterstützen Ihre Kunden bei möglichen Verkaufsplänen und bieten Hilfe bei der Immobilienpreisfindung.</p>\n' +
         '                        <p class="mb-1"><strong>Informationen zu seriösen Maklern:</strong> Sie informieren Ihre Kunden darüber, dass Sie Kontakte zu seriösen Maklern haben, um ihnen bei Bedarf eine umfassende Unterstützung beim Immobilienverkauf zu bieten.</p>\n' +
-        '                        <p class="mb-1"><strong>Informieren über steuerliche oder gesetzliche Änderungen:</strong> Sie halten Ihre Investor-Kunden stets auf dem Laufenden über relevante steuerliche oder gesetzliche Änderungen, die ihre Finanzierung und Investitionen betreffen könnten.</p>\n' +
         '                    </div>\n' +
         '                </div>\n' +
         '            </div>\n' +
         '        </div>\n' +
         '    </div>\n' +
+        '            <a id="mehrwert"></a>\n' +
         '    </div>\n' +
         '    <div class="mt-5 layout">\n' +
         '        <h2>Der Mehrwert für Ihre Marke und Kundenakquise:</h2>\n' +
         '        <div class="row section" style="width: 100%">\n' +
         '            <div class="col">\n' +
-        '                <img class="certificate" src="./assets/img/FMH-Zertifikat-medium.webp" height="240" width="320" alt="FMH-Zertifikat">\n' +
+        '                <img class="certificate" src="./assets/img/placeholder-medium.webp" height="240" width="320" alt="Placeholder">\n' +
         '            </div>\n' +
         '            <div class="col">\n' +
         '                <div class="mb-2">\n' +
@@ -304,7 +303,12 @@ async function createPage() {
         '                        Kundenkommunikation.\n' +
         '                    </p>\n' +
         '                </div>\n' +
-        '            </div>\n' +
+          '              <div class="mb-2">\n' +
+          '                <p>Ein FMH-Zertifikat ist aussagekräftig: FMH ist seit 1986 eine bekannte Marke in der Finanzwelt, die nahezu täglich in der Presse Erwähnung findet. Wir stehen für korrekte, unabhängige Informationen und einen hohen Kundentrust.</p>\n' +
+          '              </div>\n' +
+          '              <div class="mb-2">\n' +
+          '                <p>Das FMH-Zertifikat zeigt Kunden auf den ersten Blick: Hier handelt es sich um einen Baufinanzierungsvermittler, der wirklich Wert auf individuelle Beratung und hohen Kundennutzen legt.</p></div>\n' +
+        '                </div>\n' +
         '        </div>\n' +
         '    </div>\n' +
         '</div>\n' +
@@ -332,7 +336,7 @@ async function createPage() {
         '                            <p class="italic mb-1">\n' +
         '                              „Das Zertifikat von FMH präsentieren wir gerne unseren Kunden, da es sich um ein besonders vertrauenswürdiges Siegel handelt, das die Qualität unserer Arbeit dokumentiert."\n' +
         '                            </p>\n' +
-        '                            <p class="bolder text-secondary text-align-right">Christoph Müller | Geschäftsführer | DTW GmbH</p>\n' +
+        '                            <p class="bolder text-secondary">Christoph Müller | Geschäftsführer | DTW GmbH</p>\n' +
         '                        </div>\n' +
         '                    </div>\n' +
         '                </div>\n' +
@@ -353,13 +357,13 @@ async function createPage() {
         '                        <div class="column mb-0">\n' +
         '                            <p class="italic mb-1">\n' +
         '                              „Ich bin seit jeher überzeugt, dass die Immobilienfinanzierungsberatung mit Qualität und \n' +
-        '                              Service in der Endabrechnung für den Kunden die größte Ersparnis bringt. Der reine Blick \n' +
+        '                              Service in der Endabrechnung für den Kunden die größte Ersparnis bringt.<br/> Der reine Blick \n' +
         '                              auf Zinssätze, besonders in der Phase der Beratersuche, kann das Bild verfälschen und zu \n' +
-        '                              einem nachteiligen Ergebnis für den Verbraucher führen. FMH richtet mit dem Zertifikat den \n' +
+        '                              einem nachteiligen Ergebnis für den Verbraucher führen.<br/> FMH richtet mit dem Zertifikat den \n' +
         '                              Fokus auf die Dienstleistungen und erhöht damit die Transparenz für die \n' +
         '                              Finanzierungsinteressenten.“\n' +
         '                            </p>\n' +
-        '                            <p class="bolder text-secondary text-align-right">Timm Großkurth | Geschäftsführer | HW BAUFI Finanzgruppe GmbH</p>\n' +
+        '                            <p class="bolder text-secondary">Timm Großkurth | Geschäftsführer | HW BAUFI Finanzgruppe GmbH</p>\n' +
         '                        </div>\n' +
         '                    </div>\n' +
         '                </div>\n' +
@@ -380,12 +384,12 @@ async function createPage() {
           '                        <div class="column mb-0">\n' +
           '                            <p class="italic mb-1">\n' +
           '                              „Das Zertifikat von FMH bedeutet, mit einer der besten und zuverlässigsten \n' +
-          '                              Finanzierungspartner im Markt zu sein. Unsere Marken BAUFI DIREKT und HAUS & \n' +
-          '                              WOHNEN wurden unabhängig und objektiv getestet. Die gesetzten Qualitätsstandards \n' +
+          '                              Finanzierungspartner im Markt zu sein.<br/> Unsere Marken BAUFI DIREKT und HAUS & \n' +
+          '                              WOHNEN wurden unabhängig und objektiv getestet. <br/> Die gesetzten Qualitätsstandards \n' +
           '                              unterstützen den Verbraucher bei der Vertrauensbildung und der Recherche für den \n' +
           '                              bestmöglichen Service.“\n' +
           '                            </p>\n' +
-          '                            <p class="bolder text-secondary text-align-right">Roland Gisinger | Geschäftsführer | BauFi Direkt Finanzierungspartner GmbH</p>\n' +
+          '                            <p class="bolder text-secondary">Roland Gisinger | Geschäftsführer | BauFi Direkt Finanzierungspartner GmbH</p>\n' +
           '                        </div>\n' +
           '                    </div>\n' +
           '                </div>\n' +
@@ -396,8 +400,8 @@ async function createPage() {
           '                <button onclick = "dot(3)"></button>\n' +
           '            </div>\n' +
         '            </div>\n' +
-        '            <button id="prev" onclick="prev()" class="hide" aria-labelledby="Prev"><img height="40" width="40" src="./assets/img/greater-than-solid.svg" alt="Prev" class="rotate-prev"></button>\n' +
-        '            <button id="next" onclick="next()" aria-labelledby="Next"><img height="40" width="40" src="./assets/img/greater-than-solid.svg" alt="Next"></button>\n' +
+        '            <button id="prev" onclick="prev()" class="hide" aria-labelledby="Prev"><img height="40" width="40" src="./assets/img/chevron_left.svg" alt="Prev"></button>\n' +
+        '            <button id="next" onclick="next()" aria-labelledby="Next"><img height="40" width="40" src="./assets/img/chevron_left.svg" alt="Next" class="rotate-next"></button>\n' +
         '        </div>\n' +
         '    </div>\n' +
         '</div>');
@@ -436,7 +440,10 @@ async function createPage() {
           link.rel = 'stylesheet';
           document.head.appendChild(link);
         })
-
+        const mainHeader = document.getElementsByClassName('fmh-page')?.[0]?.getElementsByTagName('header')?.[0];
+        if(mainHeader) {
+          mainHeader.remove();
+        }
         content.insertAdjacentHTML('beforeend', '<div id="main">' +
           '    <div class="toast">\n' +
           '        <div class="toast-content" id="toast-content">\n' +
@@ -444,7 +451,7 @@ async function createPage() {
           '        </div>\n' +
           '    </div>\n' +
           '    <div class="row section">\n' +
-          '        <div class="col">\n' +
+          '        <div class="col-5 mb-2">\n' +
           '            <a id="form-content"></a>\n' +
           '<h2 class="color-inherit mb-5 bolder">Interesse geweckt?</h2>\n' +
           '<p style="margin-bottom: 20px">Nehmen Sie jetzt an der Zertifizierung teil und sichern Sie sich als einer der ersten Vermittler\n' +
@@ -455,7 +462,7 @@ async function createPage() {
           ' <div class="card">\n' +
           '   <div class="card-content">\n' +
           ' <div class="row">\n' +
-          '  <div class="col">\n' +
+          '  <div class="col" style="margin: auto 0">\n' +
           '  <p>Ihr Ansprechpartner ist</p>\n' +
           ' <p style="margin-bottom: 20px"><strong>Florian Blöthner</strong></p>\n' +
           ' <div class="flex mb-1">\n' +
@@ -467,23 +474,23 @@ async function createPage() {
           '   <span>+49 (0) 69 951 898 37</span>\n' +
           '</div>\n' +
           ' </div>\n' +
-          ' <div class="col circle">\n' +
+          ' <div class="col contact-person">\n' +
           '        <img' +
           '            srcset="./assets/img/ansprechpartner-florian-bloethner-small.webp 320w,' +
           '                    ./assets/img/ansprechpartner-florian-bloethner-medium.webp 640w"\n' +
           '            sizes="(max-width: 320px) 320px;' +
           '                   (max-width: 640px) 640px;"' +
-          '           height="100"' +
-          '           width="100"' +
+          '           height="150"' +
+          '           width="150"' +
           '           src="./assets/img/ansprechpartner-florian-bloethner-medium.webp"' +
           '           alt="Florian Bloethner" ' +
-          '           class="circle"/>\n' +
+          '           class="circle-150"/>\n' +
           ' </div>\n' +
           '</div>\n' +
           '</div>\n' +
           ' </div>\n' +
           ' </div>\n' +
-          '        <div class="col">\n' +
+          '        <div class="col-4">\n' +
           '            <div class="form-container">\n' +
           '                <div id="form-content">\n' +
           '                    <h2>Zertifizierung anfragen</h2>\n' +
@@ -569,6 +576,7 @@ async function fetchData() {
       certificates.forEach(function (item) {
         const cardContainer = document.createElement("div");
         const cardBody = document.createElement("div");
+        const cardBodyContent = document.createElement("div");
         const cardActions = document.createElement("div");
 
         const h3 = document.createElement("h3");
@@ -581,6 +589,7 @@ async function fetchData() {
         cardContainer.classList.add('mb-1');
 
         cardBody.className = 'card-body';
+        cardBodyContent.className = 'card-body-content';
         cardActions.className = 'card-action';
 
 
@@ -594,9 +603,9 @@ async function fetchData() {
         a.innerText = 'Zum Anbieter';
         a.href = item?.url || '#';
         a.target = '_blank';
-
-        cardBody.appendChild(img);
-        cardBody.appendChild(h3);
+        cardBodyContent.appendChild(img);
+        cardBodyContent.appendChild(h3);
+        cardBody.appendChild(cardBodyContent);
         cardBody.appendChild(a);
         cardContainer.appendChild(cardBody);
         cols.appendChild(cardContainer);
