@@ -282,10 +282,10 @@ async function createPage() {
         '    <div class="mt-5 layout">\n' +
         '        <h2>Der Mehrwert für Ihre Marke und Kundenakquise:</h2>\n' +
         '        <div class="row section" style="width: 100%">\n' +
-        '            <div class="col">\n' +
+        '            <div class="col-5">\n' +
         '                <img class="certificate" src="./assets/img/placeholder-medium.webp" height="240" width="320" alt="Placeholder">\n' +
         '            </div>\n' +
-        '            <div class="col">\n' +
+        '            <div class="col-4">\n' +
         '                <div class="mb-2">\n' +
         '                    <p><strong>Auflistung der Zertifikatsinhaber auf der Internetseite www.FMH.de</strong></p>\n' +
         '                    <p>Nur wer auf der FMH-Seite gelistet ist, darf das Zertifikat werblich einsetzen.</p>\n' +
