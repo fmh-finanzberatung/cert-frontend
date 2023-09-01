@@ -572,7 +572,11 @@ async function fetchData() {
     if (certificates?.length) {
       const row = document.getElementById('cards');
       const cols = document.createDocumentFragment();
-
+      const images = {
+        'DTW | Immobilienfinanzierung': './assets/img/dtw.jpeg',
+        'HAUS & WOHNEN': './assets/img/haus_woman.jpeg',
+        'BAUFI DIREKT': './assets/img/baufi.jpeg'
+      }
       certificates.forEach(function (item) {
         const cardContainer = document.createElement("div");
         const cardBody = document.createElement("div");
@@ -593,10 +597,10 @@ async function fetchData() {
         cardActions.className = 'card-action';
 
 
-        img.src = item?.anbieterLogoUrl || '#';
+        img.src = images[item.name];
         img.alt = 'Logo';
-        img.height = 40;
-        img.width = 40;
+        img.height = 75;
+        img.width = 225;
 
         h3.innerText = item?.name || '';
         a.className = 'card-action';

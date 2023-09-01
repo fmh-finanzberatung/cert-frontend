@@ -325,7 +325,13 @@ body {
 }
 .card-body-content {
     display: flex;
+    align-items: center;
 }
+.card-body-content > img {
+    height: auto;
+    margin-right: 20px;
+}
+
 .card-action {
     text-decoration: none;
     display: flex;
