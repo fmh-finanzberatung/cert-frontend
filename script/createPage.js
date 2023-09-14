@@ -454,36 +454,35 @@ async function createPage() {
           '        <div class="col-5 mb-2">\n' +
           '            <a id="form-content"></a>\n' +
           '<h2 class="color-inherit mb-5 bolder">Interesse geweckt?</h2>\n' +
-          '<p style="margin-bottom: 20px">Nehmen Sie jetzt an der Zertifizierung teil und sichern Sie sich als einer der ersten Vermittler\n' +
-          'unsere unabhängige und renommierte Auszeichnung.</p>\n' +
-          ' <p style="margin-bottom: 50px">Füllen Sie unser Kontaktformular wir melden uns bei Ihnen, um einen Termin zu vereinbaren.</p>\n' +
-          '<p style="margin-bottom: 20px">Falls Sie weitere Fragen haben oder Unterstützung benötigen, stehen wir Ihnen jederzeit zur Verfügung.</p>\n' +
+          '<p style="margin-bottom: 20px">Nehmen Sie jetzt an der Zertifizierung teil und sichern Sie sich als einer der ersten Vermittler unsere unabhängige und renommierte Auszeichnung.</p>\n' +
+          ' <p style="margin-bottom: 50px">Füllen Sie unser Kontaktformular aus und wir schicken Ihnen ein Auftragsformular und weitere Details zu.</p>\n' +
+          '<p style="margin-bottom: 20px">Falls Sie weitere Fragen haben, stehen wir Ihnen jederzeit zur Verfügung.</p>\n' +
           '  <p style="margin-bottom: 50px">Ihr Erfolg liegt uns am Herzen.</p>\n' +
           ' <div class="card">\n' +
           '   <div class="card-content">\n' +
           ' <div class="row">\n' +
           '  <div class="col" style="margin: auto 0">\n' +
           '  <p>Ihr Ansprechpartner ist</p>\n' +
-          ' <p style="margin-bottom: 20px"><strong>Florian Blöthner</strong></p>\n' +
+          ' <p style="margin-bottom: 20px"><strong>Max Herbst</strong></p>\n' +
           ' <div class="flex mb-1">\n' +
           '   <img src="./assets/img/envelope-regular.svg" alt="mail" width="15" height="15" class="mr-1">\n' +
           '<span>sales@fmh</span>\n' +
           ' </div>\n' +
           ' <div class="flex">\n' +
           ' <img src="./assets/img/phone-solid.svg" alt="phone" width="15" height="15" class="mr-1">\n' +
-          '   <span>+49 (0) 69 951 898 37</span>\n' +
+          '   <span>+49 (0) 69 951 898 20</span>\n' +
           '</div>\n' +
           ' </div>\n' +
           ' <div class="col contact-person">\n' +
           '        <img' +
-          '            srcset="./assets/img/ansprechpartner-florian-bloethner-small.webp 320w,' +
-          '                    ./assets/img/ansprechpartner-florian-bloethner-medium.webp 640w"\n' +
+          '            srcset="./assets/img/zitat-max-herbst-small.webp 320w,' +
+          '                    ./assets/img/zitat-max-herbst-medium.webp 640w"\n' +
           '            sizes="(max-width: 320px) 320px;' +
           '                   (max-width: 640px) 640px;"' +
           '           height="150"' +
           '           width="150"' +
-          '           src="./assets/img/ansprechpartner-florian-bloethner-medium.webp"' +
-          '           alt="Florian Bloethner" ' +
+          '           src="./assets/img/zitat-max-herbst-medium.webp"' +
+          '           alt="Max Herbst" ' +
           '           class="circle-150"/>\n' +
           ' </div>\n' +
           '</div>\n' +
@@ -572,7 +571,11 @@ async function fetchData() {
     if (certificates?.length) {
       const row = document.getElementById('cards');
       const cols = document.createDocumentFragment();
-
+      const images = {
+        'DTW | Immobilienfinanzierung': './assets/img/dtw.jpeg',
+        'HAUS & WOHNEN': './assets/img/haus_woman.jpeg',
+        'BAUFI DIREKT': './assets/img/baufi.jpeg'
+      }
       certificates.forEach(function (item) {
         const cardContainer = document.createElement("div");
         const cardBody = document.createElement("div");
@@ -593,10 +596,10 @@ async function fetchData() {
         cardActions.className = 'card-action';
 
 
-        img.src = item?.anbieterLogoUrl || '#';
+        img.src = images[item.name];
         img.alt = 'Logo';
-        img.height = 40;
-        img.width = 40;
+        img.height = 75;
+        img.width = 225;
 
         h3.innerText = item?.name || '';
         a.className = 'card-action';
