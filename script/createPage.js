@@ -466,7 +466,7 @@ async function createPage() {
           ' <p style="margin-bottom: 20px"><strong>Max Herbst</strong></p>\n' +
           ' <div class="flex mb-1">\n' +
           '   <img src="./assets/img/envelope-regular.svg" alt="mail" width="15" height="15" class="mr-1">\n' +
-          '<span>sales@fmh</span>\n' +
+          '<span>m.herbst@fmh.de</span>\n' +
           ' </div>\n' +
           ' <div class="flex">\n' +
           ' <img src="./assets/img/phone-solid.svg" alt="phone" width="15" height="15" class="mr-1">\n' +
