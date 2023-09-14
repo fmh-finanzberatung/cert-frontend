@@ -463,26 +463,26 @@ async function createPage() {
           ' <div class="row">\n' +
           '  <div class="col" style="margin: auto 0">\n' +
           '  <p>Ihr Ansprechpartner ist</p>\n' +
-          ' <p style="margin-bottom: 20px"><strong>Florian Blöthner</strong></p>\n' +
+          ' <p style="margin-bottom: 20px"><strong>Max Herbst</strong></p>\n' +
           ' <div class="flex mb-1">\n' +
           '   <img src="./assets/img/envelope-regular.svg" alt="mail" width="15" height="15" class="mr-1">\n' +
           '<span>sales@fmh</span>\n' +
           ' </div>\n' +
           ' <div class="flex">\n' +
           ' <img src="./assets/img/phone-solid.svg" alt="phone" width="15" height="15" class="mr-1">\n' +
-          '   <span>+49 (0) 69 951 898 37</span>\n' +
+          '   <span>+49 (0) 69 951 898 20</span>\n' +
           '</div>\n' +
           ' </div>\n' +
           ' <div class="col contact-person">\n' +
           '        <img' +
-          '            srcset="./assets/img/ansprechpartner-florian-bloethner-small.webp 320w,' +
-          '                    ./assets/img/ansprechpartner-florian-bloethner-medium.webp 640w"\n' +
+          '            srcset="./assets/img/zitat-max-herbst-small.webp 320w,' +
+          '                    ./assets/img/zitat-max-herbst-medium.webp 640w"\n' +
           '            sizes="(max-width: 320px) 320px;' +
           '                   (max-width: 640px) 640px;"' +
           '           height="150"' +
           '           width="150"' +
-          '           src="./assets/img/ansprechpartner-florian-bloethner-medium.webp"' +
-          '           alt="Florian Bloethner" ' +
+          '           src="./assets/img/zitat-max-herbst-medium.webp"' +
+          '           alt="Max Herbst" ' +
           '           class="circle-150"/>\n' +
           ' </div>\n' +
           '</div>\n' +
