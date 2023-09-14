@@ -454,10 +454,9 @@ async function createPage() {
           '        <div class="col-5 mb-2">\n' +
           '            <a id="form-content"></a>\n' +
           '<h2 class="color-inherit mb-5 bolder">Interesse geweckt?</h2>\n' +
-          '<p style="margin-bottom: 20px">Nehmen Sie jetzt an der Zertifizierung teil und sichern Sie sich als einer der ersten Vermittler\n' +
-          'unsere unabhängige und renommierte Auszeichnung.</p>\n' +
-          ' <p style="margin-bottom: 50px">Füllen Sie unser Kontaktformular wir melden uns bei Ihnen, um einen Termin zu vereinbaren.</p>\n' +
-          '<p style="margin-bottom: 20px">Falls Sie weitere Fragen haben oder Unterstützung benötigen, stehen wir Ihnen jederzeit zur Verfügung.</p>\n' +
+          '<p style="margin-bottom: 20px">Nehmen Sie jetzt an der Zertifizierung teil und sichern Sie sich als einer der ersten Vermittler unsere unabhängige und renommierte Auszeichnung.</p>\n' +
+          ' <p style="margin-bottom: 50px">Füllen Sie unser Kontaktformular aus und wir schicken Ihnen ein Auftragsformular und weitere Details zu.</p>\n' +
+          '<p style="margin-bottom: 20px">Falls Sie weitere Fragen haben, stehen wir Ihnen jederzeit zur Verfügung.</p>\n' +
           '  <p style="margin-bottom: 50px">Ihr Erfolg liegt uns am Herzen.</p>\n' +
           ' <div class="card">\n' +
           '   <div class="card-content">\n' +
