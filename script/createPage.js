@@ -26,7 +26,7 @@ async function createPage() {
           '            />\n' +
        '    <div class="title-container">\n' +
        '        <h1>Das FMH-Zertifikat für Baufinanzierungsvermittler</h1>\n' +
-       '        <h2>Geprüfte Expertise für echten Kundennutzen.</h2> \n' +
+       '        <h2>Geprüfte Expertise für echten Kundennutzen. <span style="color: #7f8e96; font-size: 16px">In Kooperation mit: Handelsblatt</span></h2> \n' +
        '    </div>\n' +
        '    <div class="contact">\n' +
        '        <a href="#form-content">Kontakt</a>\n' +
@@ -89,7 +89,7 @@ async function createPage() {
         '                  <a class="box2-link" href="#vermittler">Vermittler mit unserem Zertifikat</a>\n' +
         '            </div>\n' +
         '        </div>\n' +
-        '        <div class="image2"><img height="250" width="350" src="./assets/img/FMH-Zertifikat-medium.webp" alt="FMH-Zertifikat."></div>\n' +
+        '        <div class="image2"><img height="490" width="350" src="./assets/img/zertifikat.webp" alt="FMH-Zertifikat."></div>\n' +
         '    </div>\n' +
         '</div>');
       box4.insertAdjacentHTML('beforeend', '<div class="layout">\n' +
