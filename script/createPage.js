@@ -27,8 +27,9 @@ async function createPage() {
           '            />\n' +
        '    <div class="title-container">\n' +
        '        <h1>Das FMH-Zertifikat für Baufinanzierungsvermittler</h1>\n' +
-       '        <h2><div class="tested">Geprüfte Expertise für echten Kundennutzen.</div> <div class="cooperation">In Kooperation mit: </div>' +
-          '     <img class="handelsblattImg" width="200" height="50" alt="Handelsblatt" src="./assets/img/handelsblatt_klein.webp" /></h2> \n' +
+       '        <h2><div class="tested">Geprüfte Expertise für echten Kundennutzen.</div> <div class="cooperation"><div class="cooperation">In Kooperation mit</div> ' +
+          '<img class="handelsblattImg" width="200" height="35" alt="Handelsblatt" src="./assets/img/handelsblatt_original.webp" /></div>' +
+          '     </h2> \n' +
        '    </div>\n' +
        '    <div class="contact">\n' +
        '        <a href="#form-content">Kontakt</a>\n' +
