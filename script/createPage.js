@@ -492,10 +492,10 @@ async function createPage() {
           '</div>\n' +
           ' </div>\n' +
             '<div class="mt-2 card" style="display: flex; flex-wrap: wrap">\n' +
-            '<p style="margin-right: 5px; color: #7f8e96">Zur Kooperation mit dem </p> ' +
-            '<img class="handelsblattImg" width="200" height="18" alt="Handelsblatt" src="./assets/img/handelsblatt_original.webp" /> <span style="color:#7f8e96">:</span>' +
-            ' <p style="margin-left: 5px; color: #7f8e96">Verbilligtes Startangebot </p>\n'+
-            '<p style="color: #7f8e96">bis zum <span style="font-weight: bold; color: #7f8e96">15.02.2024</span></p>\n'+
+            '<div style="margin-right: 5px; color: #7f8e96">Zur Kooperation mit dem </div> ' +
+            '<img class="handelsblattImg" width="200" height="18" alt="Handelsblatt" src="./assets/img/handelsblatt_original.webp" /> <div style="color:#7f8e96; margin-right: 5px">:</div>' +
+            ' <div class="startOffer">Verbilligtes Startangebot </div>\n'+
+            '<div style="color: #7f8e96">bis zum <span style="font-weight: bold; color: #7f8e96">15.02.2024</span></div>\n'+
             '</div>\n' +
           ' </div>\n' +
           '        <div class="col-4">\n' +
