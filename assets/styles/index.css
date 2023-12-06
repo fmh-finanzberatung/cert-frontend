@@ -201,7 +201,10 @@ body {
     align-items: center;
     margin-bottom: 2px;
 }
-
+.startOffer {
+    color: #7f8e96;
+    margin-right: 5px;
+}
 .title-container {
     width: 100%;
 }
