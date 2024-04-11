@@ -261,6 +261,7 @@ body {
 .secondary-box > div {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .box4 {
     padding: 4rem 1rem;
@@ -355,6 +356,7 @@ body {
 .card-body-content {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .card-body-content > img {
     height: auto;
@@ -476,7 +478,13 @@ body {
     width: 100%;
     height: auto;
 }
-
+.layout {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1240px;
+}
 @media all and (max-width: 1050px) {
     .section-basic-requirements {
         flex-direction: column;
@@ -576,7 +584,9 @@ body {
     }
 }
 @media all and (max-width: 350px) {
-
+    .panels-container {
+        width: 320px;
+    }
     .title-container > h1 {
         font-size: 12px !important;
     }
