@@ -574,7 +574,8 @@ async function fetchData() {
       const images = {
         'DTW | Immobilienfinanzierung': './assets/img/dtw.jpeg',
         'HAUS & WOHNEN': './assets/img/haus_woman.jpeg',
-        'BAUFI DIREKT': './assets/img/baufi.jpeg'
+        'BAUFI DIREKT': './assets/img/baufi.jpeg',
+        'Mike Rojem': './assets/img/hypofriend.png'
       }
       certificates.forEach(function (item) {
         const cardContainer = document.createElement("div");
