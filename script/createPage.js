@@ -575,7 +575,8 @@ async function fetchData() {
       const row = document.getElementById('cards');
       const cols = document.createDocumentFragment();
       const images = {
-        'DTW | Immobilienfinanzierung': './assets/img/dtw.jpeg',
+        'DTW | Immobilienfinanzierung': './assets/img/dtw.webp',
+        'Stephan Thiele': './assets/img/dtw.webp',
         'HAUS & WOHNEN': './assets/img/haus_woman.jpeg',
         'BAUFI DIREKT': './assets/img/baufi.jpeg',
         'Mike Rojem': './assets/img/hypofriend.png'
