@@ -62,6 +62,7 @@ async function createPage() {
 
       box3.insertAdjacentHTML('beforeend', '<div class="background-primary">\n' +
         '    <div class="layout box3">\n' +
+          '        <div class="image2"><img height="250" width="350" src="./assets/img/FMH-Zertifikat-medium.webp" alt="FMH-Zertifikat."></div>\n' +
         '        <div class="box3-wrapper">\n' +
         '            <p class="bolder">Übersicht</p>\n' +
         '            <div>\n' +
@@ -89,7 +90,6 @@ async function createPage() {
         '                  <a class="box2-link" href="#vermittler">Vermittler mit unserem Zertifikat</a>\n' +
         '            </div>\n' +
         '        </div>\n' +
-        '        <div class="image2"><img height="250" width="350" src="./assets/img/FMH-Zertifikat-medium.webp" alt="FMH-Zertifikat."></div>\n' +
         '    </div>\n' +
         '</div>');
       box4.insertAdjacentHTML('beforeend', '<div class="layout">\n' +
