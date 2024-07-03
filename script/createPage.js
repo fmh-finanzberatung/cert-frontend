@@ -186,7 +186,6 @@ async function createPage() {
         '                 diskret. Das Ergebnis teilen wir Ihnen innerhalb von fünf Arbeitstagen mit.\n' +
         '            </span>\n' +
         '        </div>\n' +
-      '            <a id="vermittler"></a>\n' +
         '        </div>\n' +
         '        <h2  style="margin-top: 50px">Kriterien, die Vermittler erfüllen müssen</h2>\n' +
         '        <p class="mb-5">Die FMH-Finanzberatung hat bei ihrer Prüfung für das FMH-Zertifikat 90 Fragen definiert. Damit Sie sich eine Vorstellung machen können, hier ein Auszug:</p>\n' +
@@ -539,6 +538,7 @@ async function createPage() {
           '\n' +
           '        </div>\n' +
           '    </div>\n' +
+            '    <a id="vermittler"></a>\n' +
           '    <div class="row" style="margin: 50px 0">\n' +
           '        <h2 class="color-inherit bolder">Diese Vermittler wurden "geprüft und gecheckt"</h2>\n' +
           '    </div>\n' +
