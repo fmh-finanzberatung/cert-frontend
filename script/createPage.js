@@ -18,6 +18,7 @@ async function createPage() {
        '<div class="first-box-content">\n' +
           '    <img' +
           '            width="600" \n' +
+          '            class="logo" \n' +
           '            height="200"\n' +
           '            src="./assets/img/Logo.webp" \n' +
           '            srcset="./assets/img/Logo.webp 1250w, ./assets/img/Logo-medium.webp 640w, ./assets/img/Logo-medium.webp 320w,"\n' +
@@ -26,7 +27,9 @@ async function createPage() {
           '            />\n' +
        '    <div class="title-container">\n' +
        '        <h1>Das FMH-Zertifikat für Baufinanzierungsvermittler</h1>\n' +
-       '        <h2>Geprüfte Expertise für echten Kundennutzen.</h2> \n' +
+       '        <h2><div class="tested">Geprüfte Expertise für echten Kundennutzen.</div> <div class="cooperation"><div class="cooperation">In Kooperation mit</div> ' +
+          '<img class="handelsblattImg" width="200" height="35" alt="Handelsblatt" src="./assets/img/handelsblatt_original.webp" /></div>' +
+          '     </h2> \n' +
        '    </div>\n' +
        '    <div class="contact">\n' +
        '        <a href="#form-content">Kontakt</a>\n' +
@@ -465,7 +468,7 @@ async function createPage() {
           ' <p style="margin-bottom: 20px"><strong>Max Herbst</strong></p>\n' +
           ' <div class="flex mb-1">\n' +
           '   <img src="./assets/img/envelope-regular.svg" alt="mail" width="15" height="15" class="mr-1">\n' +
-          '<span>sales@fmh</span>\n' +
+          '<span>m.herbst@fmh.de</span>\n' +
           ' </div>\n' +
           ' <div class="flex">\n' +
           ' <img src="./assets/img/phone-solid.svg" alt="phone" width="15" height="15" class="mr-1">\n' +

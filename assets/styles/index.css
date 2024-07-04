@@ -185,20 +185,49 @@ body {
     min-height: 500px;
     position: relative;
 }
-.first-box-content img {
+.first-box-content .logo {
     width: 600px;
     height: auto;
     margin-bottom: 5rem;
 }
-
+.handelsblattImg {
+    width: auto;
+}
+.cooperation {
+    white-space: nowrap;
+    color: #7f8e96;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+.startOffer {
+    color: #7f8e96;
+    margin-right: 5px;
+}
+.title-container {
+    width: 100%;
+}
 .title-container h1 {
+    text-align: center;
     color: var(--primary);
 }
 .title-container h2 {
-    color: var(--secondary);
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
     font-weight: 400;
     font-size: 22px;
-    margin-top: 10px
+    margin-top: 20px;
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.title-container h2 .tested {
+    white-space: nowrap;
+    color: var(--secondary);
+    margin-bottom: 2px;
 }
 .contact {
     display: flex;
@@ -423,6 +452,9 @@ body {
 .mb-5 {
     margin-bottom: 50px;
 }
+.mt-2 {
+    margin-top: 20px
+}
 .mt-5 {
     margin-top: 50px
 }
@@ -462,9 +494,20 @@ body {
         width: 100%;
     }
 }
+@media all and (max-width: 920px) {
+    .title-container h2 {
+        justify-content: center;
+    }
+}
+
 @media all and (max-width: 800px) {
     .title-container > h1 {
         font-size: 22px !important;
+        display: flex;
+        justify-content: center;
+    }
+    .title-container h2 {
+        justify-content: center;
     }
     .section {
        flex-direction: column;
@@ -477,9 +520,12 @@ body {
     }
 }
 @media all and (max-width: 680px) {
-    .first-box-content > img {
+    .first-box-content > .logo {
         width: 400px;
         height: auto;
+    }
+    .handelsblattImg {
+        height: 20px;
     }
 
 }
@@ -487,7 +533,7 @@ body {
     .author-box {
         width: auto;
     }
-    .first-box-content > img {
+    .first-box-content > .logo {
         width: 300px;
         height: auto;
     }
@@ -507,6 +553,9 @@ body {
     }
     .title-container > h2 {
         font-size: 16px !important;
+    }
+    .title-container > h2 .handelsblattImg {
+        width: auto;
     }
     .image2 img {
         width: 290px;
