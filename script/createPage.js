@@ -65,6 +65,7 @@ async function createPage() {
 
       box3.insertAdjacentHTML('beforeend', '<div class="background-primary">\n' +
         '    <div class="layout box3">\n' +
+          '        <div class="image2"><img height="350" width="250" src="./assets/img/zertifikat.webp" alt="FMH-Zertifikat."></div>\n' +
         '        <div class="box3-wrapper">\n' +
         '            <p class="bolder">Übersicht</p>\n' +
         '            <div>\n' +
@@ -92,7 +93,6 @@ async function createPage() {
         '                  <a class="box2-link" href="#vermittler">Vermittler mit unserem Zertifikat</a>\n' +
         '            </div>\n' +
         '        </div>\n' +
-        '        <div class="image2"><img height="490" width="350" src="./assets/img/zertifikat.webp" alt="FMH-Zertifikat."></div>\n' +
         '    </div>\n' +
         '</div>');
       box4.insertAdjacentHTML('beforeend', '<div class="layout">\n' +
@@ -490,12 +490,6 @@ async function createPage() {
           '</div>\n' +
           '</div>\n' +
           ' </div>\n' +
-            '<div class="mt-2 card" style="display: flex; flex-wrap: wrap">\n' +
-            '<div style="margin-right: 5px; color: #7f8e96">Zur Kooperation mit dem </div> ' +
-            '<img class="handelsblattImg" width="200" height="18" alt="Handelsblatt" src="./assets/img/handelsblatt_original.webp" /> <div style="color:#7f8e96; margin-right: 5px">:</div>' +
-            ' <div class="startOffer">Verbilligtes Startangebot </div>\n'+
-            '<div style="color: #7f8e96">bis zum <span style="font-weight: bold; color: #7f8e96">15.02.2024</span></div>\n'+
-            '</div>\n' +
           ' </div>\n' +
           '        <div class="col-4">\n' +
           '            <div class="form-container">\n' +
