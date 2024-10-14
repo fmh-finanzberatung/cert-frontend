@@ -588,8 +588,10 @@ async function fetchData() {
         'Mike Rojem': './assets/img/hypofriend.png',
         'Marco During': './assets/img/haus-und-wohnen.webp',
         'Jeanette Westphal': './assets/img/haus-und-wohnen.webp',
-        'Martin Hechel': './assets/img/home-and-finance.webp',
-        'Tatjana Lehr': './assets/img/home-and-finance.webp',
+        'Martin Hechel': './assets/img/haus-und-wohnen.webp',
+        'Tatjana Lehr': './assets/img/haus-und-wohnen.webp',
+        'Martin Alves': './assets/img/home-and-finance.webp',
+        'Tobias Schönfeld': './assets/img/home-and-finance.webp',
       }
       certificates.forEach(function (item) {
         const cardContainer = document.createElement("div");
