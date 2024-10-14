@@ -579,7 +579,13 @@ async function fetchData() {
         'Stephan Thiele': './assets/img/dtw.webp',
         'HAUS & WOHNEN': './assets/img/haus_woman.jpeg',
         'BAUFI DIREKT': './assets/img/baufi.jpeg',
-        'Mike Rojem': './assets/img/hypofriend.png'
+        'Mike Rojem': './assets/img/hypofriend.png',
+        'Marco During': './assets/img/haus-und-wohnen.webp',
+        'Jeanette Westphal': './assets/img/haus-und-wohnen.webp',
+        'Martin Hechel': './assets/img/haus-und-wohnen.webp',
+        'Tatjana Lehr': './assets/img/haus-und-wohnen.webp',
+        'Martin Alves': './assets/img/home-and-finance.webp',
+        'Tobias Schönfeld': './assets/img/home-and-finance.webp',
       }
       certificates.forEach(function (item) {
         const cardContainer = document.createElement("div");
@@ -599,7 +605,6 @@ async function fetchData() {
         cardBody.className = 'card-body';
         cardBodyContent.className = 'card-body-content';
         cardActions.className = 'card-action';
-
 
         img.src = images[item.name];
         img.alt = 'Logo';
