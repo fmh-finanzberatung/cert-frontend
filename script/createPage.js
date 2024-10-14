@@ -189,7 +189,6 @@ async function createPage() {
         '                 diskret. Das Ergebnis teilen wir Ihnen innerhalb von fünf Arbeitstagen mit.\n' +
         '            </span>\n' +
         '        </div>\n' +
-      '            <a id="vermittler"></a>\n' +
         '        </div>\n' +
         '        <h2  style="margin-top: 50px">Kriterien, die Vermittler erfüllen müssen</h2>\n' +
         '        <p class="mb-5">Die FMH-Finanzberatung hat bei ihrer Prüfung für das FMH-Zertifikat 90 Fragen definiert. Damit Sie sich eine Vorstellung machen können, hier ein Auszug:</p>\n' +
@@ -548,6 +547,7 @@ async function createPage() {
           '\n' +
           '        </div>\n' +
           '    </div>\n' +
+            '    <a id="vermittler"></a>\n' +
           '    <div class="row" style="margin: 50px 0">\n' +
           '        <h2 class="color-inherit bolder">Diese Vermittler wurden "geprüft und gecheckt"</h2>\n' +
           '    </div>\n' +
@@ -581,9 +581,15 @@ async function fetchData() {
       const row = document.getElementById('cards');
       const cols = document.createDocumentFragment();
       const images = {
-        'DTW | Immobilienfinanzierung': './assets/img/dtw.jpeg',
+        'DTW | Immobilienfinanzierung': './assets/img/dtw.webp',
+        'Stephan Thiele': './assets/img/dtw.webp',
         'HAUS & WOHNEN': './assets/img/haus_woman.jpeg',
-        'BAUFI DIREKT': './assets/img/baufi.jpeg'
+        'BAUFI DIREKT': './assets/img/baufi.jpeg',
+        'Mike Rojem': './assets/img/hypofriend.png',
+        'Marco During': './assets/img/haus-und-wohnen.webp',
+        'Jeanette Westphal': './assets/img/haus-und-wohnen.webp',
+        'Martin Hechel': './assets/img/home-and-finance.webp',
+        'Tatjana Lehr': './assets/img/home-and-finance.webp',
       }
       certificates.forEach(function (item) {
         const cardContainer = document.createElement("div");
@@ -603,7 +609,6 @@ async function fetchData() {
         cardBody.className = 'card-body';
         cardBodyContent.className = 'card-body-content';
         cardActions.className = 'card-action';
-
 
         img.src = images[item.name];
         img.alt = 'Logo';
